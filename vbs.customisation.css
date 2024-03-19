@@ -1,0 +1,13 @@
+.vbs-pink * {
+    --t-base-color__highlight: pink;
+    --t-base-color__highlight--dark: pink;
+    --t-base-color__highlight--light: gray;
+    --t-base-color__highlight-r: 31;
+    --t-base-color__highlight-g: 31;
+    --t-base-color__highlight-b: 31;
+    --t-base-color__focus: gray;
+  
+    --t-font-color__highlight: gray;
+    --t-font-color__highlight--dark: gray;
+    --t-font-color__highlight--light: gray;
+  }
