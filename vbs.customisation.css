@@ -1,13 +1,451 @@
-.vbs-pink * {
-    --t-base-color__highlight: pink;
-    --t-base-color__highlight--dark: pink;
-    --t-base-color__highlight--light: gray;
-    --t-base-color__highlight-r: 31;
-    --t-base-color__highlight-g: 31;
-    --t-base-color__highlight-b: 31;
-    --t-base-color__focus: gray;
-  
-    --t-font-color__highlight: gray;
-    --t-font-color__highlight--dark: gray;
-    --t-font-color__highlight--light: gray;
+/* Basic Theme */
+/* If IE is used, the variables must be overwritten with :root {} */
+:root {
+  --t-logo__height--s: 24px;
+  --t-logo__height--l: 76px;
+  --t-logo__width--s: 75px;
+  --t-logo__width--l: 235px;
+
+  --t-base-color: #fff;
+  --t-base-color__highlight: #000;
+  --t-base-color__highlight--dark: #000;
+  --t-base-color__highlight--light: #0d0d0d;
+
+  --t-base-color__highlight-r: 0;
+  --t-base-color__highlight-g: 0;
+  --t-base-color__highlight-b: 0;
+
+  --t-base-color__success: #18ca00;
+  --t-base-color__success--dark: #00a400;
+  --t-base-color__warning: #ffa500;
+  --t-base-color__error: #ff0000;
+  --t-base-color__error--dark: #d90000;
+  --t-base-color__focus: #000;
+  --t-base-color__disabled: #6c6c6c;
+
+  --t-background-color__base: #fff;
+  --t-background-color__shaded1: #f6f6f6;
+  --t-background-color__shaded2: #ededed;
+  --t-background-color__shaded3: #a4a4a4;
+  --t-background-color__shaded4: #6c6c6c;
+  --t-background-color__shaded5: #4b4b4b;
+  --t-background-color__dark: #000;
+  --t-background-color__footer: #333;
+  --t-background-color__header: #fff;
+
+  --t-font-color__highlight: #000;
+  --t-font-color__highlight--dark: #000;
+  --t-font-color__highlight--light: #0d0d0d;
+  --t-font-color__link: #529ad6;
+  --t-font-color__link--dark: #2c74b0;
+  --t-font-color__footer-link: #fff;
+  --t-font-color__text: #4b4b4b;
+  --t-font-color__heading: #262626;
+  --t-font-color__header: #d4021d;
+  --t-font-color__footer: #fff;
+  --t-font-color__input: #262626;
+  --t-font-color__input-label: #a4a4a4;
+  --t-font-color__success: #18ca00;
+  --t-font-color__success--dark: #00a400;
+  --t-font-color__warning: #ffa500;
+  --t-font-color__error: #eb0000;
+  --t-font-color__error--dark: #d90000;
+  --t-font-color__base: #fff;
+  --t-font-color__disabled: #6c6c6c;
+  --t-font-color__hint: #6c6c6c;
+
+  --t-font-size__base--s: 14px;
+  --t-font-size__base--m: 14px;
+  --t-font-size__base--l: 16px;
+  --t-font-size__navigation--s: 1em;
+  --t-font-size__navigation--m: 1em;
+  --t-font-size__navigation--l: 0.84em;
+  --t-font-size__header--s: 0.84em;
+  --t-font-size__header--m: 0.84em;
+  --t-font-size__header--l: 0.8em;
+  --t-font-size__input-label--s: 0.87em;
+  --t-font-size__input-label--m: 0.87em;
+  --t-font-size__input-label--l: 0.84em;
+  --t-font-size__footer--s: 0.81em;
+  --t-font-size__footer--m: 0.81em;
+  --t-font-size__footer--l: 0.71em;
+  --t-font-size__title--s: 2.25em;
+  --t-font-size__title--m: 2.25em;
+  --t-font-size__title--l: 2.21em;
+  --t-font-size__heading2--s: 1.75em;
+  --t-font-size__heading2--m: 1.75em;
+  --t-font-size__heading2--l: 1.58em;
+  --t-font-size__heading3--s: 1.13em;
+  --t-font-size__heading3--m: 1.13em;
+  --t-font-size__heading3--l: 1.16em;
+  --t-font-size__heading4--s: 1.13em;
+  --t-font-size__heading4--m: 1.13em;
+  --t-font-size__heading4--l: 1.16em;
+  --t-font-size__heading5--s: 0.88em;
+  --t-font-size__heading5--m: 0.88em;
+  --t-font-size__heading5--l: 0.74em;
+  --t-font-size__button-small--s: 1em;
+  --t-font-size__button-small--m: 1em;
+  --t-font-size__button-small--l: 1.1em;
+  --t-font-size__button-medium--s: 1em;
+  --t-font-size__button-medium--m: 1em;
+  --t-font-size__button-medium--l: 1.1em;
+  --t-font-size__button-large--s: 1.2em;
+  --t-font-size__button-large--m: 1.2em;
+  --t-font-size__button-large--l: 1.2em;
+  --t-font-size__large-text--s: 20px;
+  --t-font-size__large-text--m: 24px;
+  --t-font-size__large-text--l: 28px;
+
+  --t-font-family: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__search: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__header: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__footer: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__h1: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__h2: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__h3: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__h4: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__h5: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__h6: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__input: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__button: HelveticaNowText, Arial, sans-serif;
+  --t-font-family__highlight: HelveticaNowText, Arial, sans-serif;
+
+  --t-logo__height--l: 60px;
+  --t-logo__width--l: 255px;
+}
+
+/* Non Standard */
+.vbs-dark {
+  --t-base-color__highlight: #1f1f1f;
+  --t-base-color__highlight--dark: #313131;
+  --t-base-color__highlight--light: white;
+  --t-base-color__focus: rgb(205, 14, 14);
+
+  --t-base-color__highlight-r: 31;
+  --t-base-color__highlight-g: 31;
+  --t-base-color__highlight-b: 31;
+
+  --t-font-color__highlight: white;
+  --t-font-color__highlight--dark: gray;
+  --t-font-color__highlight--light: gray;
+
+  --t-font-color__heading: white;
+
+  font-variation-settings: normal;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+.vbs-dark .btn--primary {
+  background-color: var(--t-base-color__highlight--dark);
+  border: 1px solid var(--t-base-color__highlight--dark);
+}
+
+.vbs-dark .header {
+  background-color: var(--t-base-color__highlight);
+  color: var(--t-font-color__base);
+  position: sticky;
+  top: 0;
+}
+
+.vbs-dark .header__logo > img.header__logo {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.vbs-dark div.l-container {
+  margin: auto;
+}
+
+.vbs-dark a > div.header__logo {
+  background-size: 100%;
+  background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png);
+}
+
+.vbs-dark .header__information * {
+  color: var(--t-base-color) !important;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.vbs-dark .header__information select {
+  border: none;
+}
+
+.vbs-dark .header__information select {
+  border-bottom: 4px solid transparent;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+.vbs-dark div.header__navigation > a {
+  border-bottom: 4px solid transparent;
+  transition-property: border;
+  transition-duration: 0.3s;
+}
+
+.vbs-dark .header__information select:hover {
+  border-bottom: 4px solid var(--t-base-color__focus);
+}
+
+.vbs-dark div.header__navigation > a:hover {
+  border-bottom: 4px solid var(--t-base-color__focus);
+}
+
+.vbs-dark div.menu {
+  background-color: var(--t-base-color__highlight--dark);
+  border: none;
+  height: 34px;
+  min-height: unset;
+  top: 98px;
+}
+.vbs-dark .nav__item-container > li > a {
+  border-bottom: 4px solid transparent;
+  transition-property: border;
+  transition-duration: 0.3s;
+}
+
+.vbs-dark .menu__container {
+  min-height: 34px;
+  height: 34px;
+}
+
+.vbs-dark .menu__nav ol.nav__item-container {
+  height: 34px;
+  min-height: unset;
+}
+
+.vbs-dark ol.nav__item-container li {
+  height: 34px;
+  min-height: unset;
+  margin-right: 8px;
+}
+
+.vbs-dark ol.nav__item-container li > a {
+  border-bottom: 4px solid transparent;
+  background-color: var(--t-base-color__highlight--dark) !important;
+  padding: 0;
+  height: 34px;
+  min-height: unset;
+  font-size: 12px;
+}
+
+.vbs-dark ol.nav__item-container li > a:hover {
+  border-bottom: 4px solid var(--t-base-color__focus);
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-dark a.menu__icon:last-child {
+  margin-right: 0;
+}
+
+.vbs-dark div.home__edit-page {
+  background-color: var(--t-base-color__highlight);
+  color: var(--t-font-color__base);
+  position: static;
+  margin: 1rem auto;
+}
+
+.vbs-dark div.home__edit-page button {
+  margin-right: 0;
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__base);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.vbs-dark div.home__edit-page button svg {
+  height: 24px;
+  width: 24px;
+}
+
+.vbs-dark div.home__background-image {
+  background-image: none;
+  background-color: var(--t-base-color__highlight);
+  color: var(--t-font-color__base);
+}
+
+.vbs-dark div.news__panel-container .news__container.news__container--large {
+  border: none;
+  box-shadow: none;
+}
+
+.vbs-dark div.news__inner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vbs-dark div.news__panel-container > div {
+  width: 100%;
+  height: 100%;
+}
+
+.vbs-dark .news__inner-container .heading__Level1 {
+  font-size: 36px;
+  line-height: 60px;
+  color: var(--t-font-color__heading) !important;
+  text-transform: uppercase;
+}
+
+.vbs-dark .news__inner-container p {
+  font-size: 24px;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: var(--t-font-color__heading) !important;
+}
+
+.vbs-dark div.news__container .news__container--large {
+  width: 100% !important;
+}
+
+.vbs-dark .home__panel {
+  max-width: 1398px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 0px) {
+  .vbs-dark div.news__panel-container .news__container.news__container--large {
+    width: 100%;
+    height: 100% !important;
   }
+}
+
+.vbs-dark h1.heading__Title {
+  font-weight: 501;
+}
+
+.vbs-dark .kpi__container {
+  gap: 4px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+}
+
+.vbs-dark .kpi__container::after {
+  content: "";
+  height: 100%;
+}
+
+.vbs-dark .kpi__container .kpi {
+  width: 100%;
+  height: 100%;
+  max-width: unset;
+  min-height: unset;
+  min-width: unset;
+  background: none;
+  background-color: var(--t-base-color__highlight--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.vbs-dark .kpi__container .kpi:hover {
+  color: var(--t-base-color__focus);
+  box-shadow: inset 0 -12px var(--t-base-color__focus);
+}
+
+.vbs-dark .kpi__container .kpi .value {
+  padding-bottom: 25%;
+}
+
+.vbs-dark .kpi__container .kpi .title {
+  background-color: unset;
+  padding-bottom: 25%;
+}
+
+.vbs-dark .catalog-folder-list {
+  width: 100%;
+  max-width: 100%;
+  gap: 4px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vbs-dark .catalog-folder-list > li {
+  max-width: 100%;
+  min-width: unset !important;
+  height: 100%;
+}
+
+.vbs-dark .catalog-folder-list > li > a {
+  padding-bottom: 25%;
+  padding-top: 25%;
+  transition: all 0.3s ease;
+}
+
+.vbs-dark .catalog-folder-list > li > a:hover {
+  color: var(--t-base-color__focus);
+  box-shadow: inset 0 -12px var(--t-base-color__focus);
+}
+
+.vbs-dark .catalog-folder-list > li > a div {
+  background-color: rgb(
+    var(--t-base-color__highlight-r),
+    var(--t-base-color__highlight-g),
+    var(--t-base-color__highlight-b),
+    0.5
+  );
+}
+
+.vbs-dark .catalog-folder-list__navigation a {
+  background-color: var(--t-base-color__highlight--dark) !important;
+  border: 1px solid var(--t-base-color__highlight--dark) !important;
+  color: var(--t-base-color__highlight--light) !important;
+}
+
+.vbs-dark .catalog-folder-list > li > a {
+  /* background-color: var(--t-base-color__highlight--dark); */
+}
+
+.vbs-dark .catalog-folder-list > li > a:hover h2 {
+  color: var(--t-base-color__focus);
+}
+
+@media (min-width: 0) and (max-width: 337px) {
+  .vbs-dark .home__edit-page {
+    max-width: 679px;
+    min-width: 320px;
+    padding: 0 12px;
+    width: 100%;
+  }
+}
+@media (min-width: 338px) and (max-width: 697px) {
+  .vbs-dark .home__edit-page {
+    max-width: 679px;
+    min-width: 320px;
+    padding: 0 12px;
+    width: 100%;
+  }
+}
+@media (min-width: 698px) and (max-width: 1041px) {
+  .vbs-dark .home__edit-page {
+    max-width: 680px;
+    min-width: 680px;
+    padding: 0 12px;
+    width: 100%;
+  }
+}
+@media (min-width: 1042px) and (max-width: 1457px) {
+  .vbs-dark .home__edit-page {
+    max-width: 1024px;
+    min-width: 1024px;
+    padding: 0 48px;
+    width: 100%;
+  }
+}
+@media (min-width: 1458px) {
+  .vbs-dark .home__edit-page {
+    max-width: 1440px;
+    min-width: 1440px;
+    padding: 0 192px;
+    width: 100%;
+  }
+}
