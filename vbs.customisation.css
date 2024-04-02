@@ -243,7 +243,7 @@
   border-bottom: 4px solid var(--t-base-color__focus);
 }
 
-.vbs-black a.menu__icon:focus {
+.vbs-black a:focus {
   outline: none;
 }
 
