@@ -25,7 +25,7 @@
 
   --t-background-color__base: #fff;
   --t-background-color__shaded1: #f6f6f6;
-  --t-background-color__shaded2: #ededed;
+  --t-background-color__shaded2: var(--t-base-color__highlight--dark);
   --t-background-color__shaded3: #a4a4a4;
   --t-background-color__shaded4: #6c6c6c;
   --t-background-color__shaded5: #4b4b4b;
@@ -237,6 +237,11 @@
   background-color: var(--t-base-color__highlight--dark);
 }
 
+.vbs-black ol.nav__item-container li > a:focus {
+  border-bottom: 4px solid var(--t-base-color__focus);
+  background-color: var(--t-base-color__highlight--dark);
+}
+
 .vbs-black a.menu__icon:last-child {
   margin-right: 0;
 }
@@ -417,6 +422,7 @@
     width: 100%;
   }
 }
+
 @media (min-width: 338px) and (max-width: 697px) {
   .vbs-black .home__edit-page {
     max-width: 679px;
@@ -449,3 +455,23 @@
     width: 100%;
   }
 }
+
+/* KATALOG */
+
+.vbs-black div.catalog.catalog__background.background__with-image {
+  background-image: none;
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black div.favorites__ribbon {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black div.favorites__ribbon > button:focus {
+  outline-color: transparent;
+}
+
+.vbs-black div.favorites__ribbon > button > svg > .svg-color {
+  fill: var(--t-base-color__focus);
+}
+
