@@ -142,21 +142,12 @@
   tab-size: 4;
 }
 
+/* main */
 .vbs-black main {
   background-color: var(--t-base-color__highlight);
 }
 
-.vbs-black .btn--primary {
-  background-color: var(--t-base-color__highlight--light) !important;
-  color: var(--t-base-color__highlight) !important;
-  border: none !important;
-}
-
-.vbs-black .btn--primary:hover {
-  background-color: var(--t-base-color__focus) !important;
-  color: var(--t-base-color__highlight--light) !important;
-}
-
+/* header */
 .vbs-black .header {
   background-color: var(--t-base-color__highlight);
   color: var(--t-font-color__base);
@@ -172,6 +163,7 @@
 
 .vbs-black div.l-container {
   margin: auto;
+  color: var(--t-base-color__highlight--light);
 }
 
 .vbs-black a > div.header__logo {
@@ -217,6 +209,7 @@
   min-height: unset;
   top: 98px;
 }
+
 .vbs-black .nav__item-container > li > a {
   border-bottom: 4px solid transparent;
   transition-property: border;
@@ -258,11 +251,6 @@
   border-bottom: 4px solid var(--t-base-color__focus);
 }
 
-.vbs-black a:focus,
-.vbs-black button:focus {
-  outline: none;
-}
-
 .vbs-black .menu__icon:hover .svg-color {
   fill: var(--t-base-color__focus);
 }
@@ -271,9 +259,8 @@
   margin-right: 0;
 }
 
+/* home */
 .vbs-black div.home__edit-page {
-  background-color: var(--t-base-color__highlight);
-  color: var(--t-font-color__base);
   position: static;
   margin: 1rem auto;
 }
@@ -488,28 +475,25 @@
   background-color: var(--t-base-color__highlight--dark);
 }
 
-.vbs-black div.favorites__ribbon > button:focus {
-  outline-color: transparent;
-}
-
 .vbs-black div.favorites__ribbon > button > svg > .svg-color {
   fill: var(--t-base-color__focus);
 }
 
-.vbs-black .item-box-tile {
+.vbs-black .item-box-tile,
+.vbs-black .item-box-tile-small {
   background-color: var(--t-base-color__highlight--dark);
   color: var(--t-base-color__highlight--light);
 }
 
-.vbs-black .item-box-tile * {
+.vbs-black .item-box-tile *,
+.vbs-black .item-box-tile-small * {
   color: var(--t-base-color__highlight--light);
 }
 
-.vbs-black .item-box-tile .item-icon__icon {
+.vbs-black .item-icon__icon {
   background-color: transparent;
   border-color: var(--t-base-color__highlight--light);
 }
-
 
 /* WEITERES */
 .navigation__navigation-point {
@@ -517,10 +501,6 @@
 }
 
 /* Trainings */
-.vbs-black div.watchlist__toolbar-icon > button:focus {
-  outline-color: transparent;
-}
-
 .vbs-black path.svg-red {
   fill: var(--t-base-color__error);
 }
@@ -535,13 +515,11 @@
   color: var(--t-base-color__highlight--light);
 }
 
-.vbs-black div.l-element--striped {
+.vbs-black div.l-element--striped,
+.vbs-black div.l-element--striped-reverse {
+  color: var(--t-base-color__highlight--light);
   background-color: var(--t-base-color__highlight);
   margin-bottom: 1rem;
-}
-
-.vbs-black div.l-element--striped .l-container * {
-  color: var(--t-base-color__highlight--light);
 }
 
 .vbs-black div.l-element--striped .l-container > div {
@@ -549,4 +527,56 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 1rem;
+}
+
+.vbs-black div.l-element--striped-reverse .l-container > div {
+  background-color: var(--t-base-color__highlight--dark);
+  margin: unset;
+  padding: 1rem;
+}
+
+/* request wizard */
+.vbs-black .request-wizard__main {
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-base-color__highlight--light);
+}
+
+.vbs-black .step-content {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .steps * {
+  color: var(--t-base-color__highlight--light);
+}
+
+/* inputs */
+.vbs-black main input,
+.vbs-black main select,
+.vbs-black main textarea {
+  background-color: var(--t-base-color__highlight--light);
+  color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .btn--primary {
+  background-color: var(--t-base-color__highlight--light) !important;
+  color: var(--t-base-color__highlight) !important;
+  border: none !important;
+}
+
+.vbs-black .btn--primary * {
+  color: var(--t-base-color__highlight) !important;
+}
+
+.vbs-black .btn--primary:hover {
+  background-color: var(--t-base-color__focus) !important;
+  color: var(--t-base-color__highlight--light) !important;
+}
+
+/* table */
+.vbs-black div[role="rowgroup"]:first-child div[role="row"]:first-child {
+  background-color: var(--t-base-color__focus);
+}
+
+.vbs-black div[role="rowgroup"] div[role="row"] {
+  background-color: var(--t-base-color__highlight--dark);
 }
