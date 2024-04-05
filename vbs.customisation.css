@@ -177,7 +177,7 @@
   text-transform: uppercase;
 }
 
-.vbs-black .header__information select {
+.vbs-black .header__information select:not(:focus) {
   border: none;
 }
 
@@ -191,7 +191,6 @@
   border-bottom: 4px solid transparent;
   transition-property: border;
   transition-duration: 0.3s;
-  outline: none;
 }
 
 .vbs-black .header__information select:hover {
