@@ -131,7 +131,8 @@
   --t-base-color__highlight-g: 31;
   --t-base-color__highlight-b: 31;
 
-  --t-font-color__highlight: white;
+  --t-font-color__base: white;
+  --t-font-color__highlight: #1f1f1f;
   --t-font-color__highlight--dark: gray;
   --t-font-color__highlight--light: gray;
 
@@ -157,11 +158,12 @@
   --t-base-color__highlight-g: 31;
   --t-base-color__highlight-b: 31;
 
+  --t-font-color__base: #1f1f1f;
   --t-font-color__highlight: white;
-  --t-font-color__highlight--dark: gray;
-  --t-font-color__highlight--light: gray;
+  --t-font-color__highlight--dark: #313131;
+  --t-font-color__highlight--light: #313131;
 
-  --t-font-color__heading: white;
+  --t-font-color__heading: #1f1f1f;
 
   font-variation-settings: normal;
   line-height: 1.5;
@@ -193,7 +195,7 @@
 .vbs-black div.l-container,
 .vbs-silver div.l-container {
   margin: auto;
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
 }
 
 .vbs-black a > div.header__logo,
@@ -202,9 +204,17 @@
   background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png);
 }
 
+.vbs-silver a > div.header__logo {
+  filter: invert(100%);
+}
+
+.vbs-silver div.header__slogan {
+  color: var(--t-font-color__base);
+}
+
 .vbs-black .header__information *,
 .vbs-silver .header__information * {
-  color: var(--t-base-color) !important;
+  color: var(--t-font-color__base) !important;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -316,7 +326,7 @@
 .vbs-silver div.home__edit-page button {
   margin-right: 0;
   background-color: var(--t-base-color__highlight--dark);
-  color: var(--t-font-color__base);
+  color: var(--t-font-color__highlight);
   text-transform: uppercase;
   font-size: 12px;
 }
@@ -325,6 +335,10 @@
 .vbs-silver div.home__edit-page button svg {
   height: 24px;
   width: 24px;
+}
+
+.vbs-silver div.home__edit-page button svg .svg-color {
+  fill: var(--t-font-color__highlight);
 }
 
 .vbs-black div.home__background-image,
@@ -565,14 +579,14 @@
 .vbs-silver .item-box-tile,
 .vbs-silver .item-box-tile-small {
   background-color: var(--t-base-color__highlight--dark);
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
 }
 
 .vbs-black .item-box-tile *,
 .vbs-black .item-box-tile-small *,
 .vbs-silver .item-box-tile *,
 .vbs-silver .item-box-tile-small * {
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
 }
 
 .vbs-black .item-icon__icon,
@@ -602,14 +616,14 @@
 .vbs-black div.lesson__toolbar *,
 .vbs-silver div.lesson__toolbar * {
   background-color: var(--t-base-color__highlight--dark);
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
 }
 
 .vbs-black div.l-element--striped,
 .vbs-black div.l-element--striped-reverse,
 .vbs-silver div.l-element--striped,
 .vbs-silver div.l-element--striped-reverse {
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
   background-color: var(--t-base-color__highlight);
   margin-bottom: 1rem;
 }
@@ -633,7 +647,7 @@
 .vbs-black .request-wizard__main,
 .vbs-silver .request-wizard__main {
   background-color: var(--t-base-color__highlight--dark);
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
 }
 
 .vbs-black .step-content,
@@ -643,7 +657,7 @@
 
 .vbs-black .steps *,
 .vbs-silver .steps * {
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__highlight);
 }
 
 /* inputs */
@@ -659,7 +673,7 @@
 
 .vbs-black .btn--primary,
 .vbs-silver .btn--primary {
-  background-color: var(--t-base-color__highlight--light) !important;
+  background-color: var(--t-font-color__highlight) !important;
   color: var(--t-base-color__highlight) !important;
   border: none !important;
 }
@@ -672,7 +686,7 @@
 .vbs-black .btn--primary:hover,
 .vbs-silver .btn--primary:hover {
   background-color: var(--t-base-color__focus) !important;
-  color: var(--t-base-color__highlight--light) !important;
+  color: var(--t-font-color__highlight) !important;
 }
 
 /* table */
