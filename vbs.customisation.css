@@ -467,17 +467,17 @@
 }
 
 .vbs-black .kpi__container .kpi.orange,
-.vbs-silver .kpi__container .kpi.orange {
+.vbs-silver .kpi__container .kpi.orange * {
   color: #e0c93a;
 }
 
 .vbs-black .kpi__container .kpi.green,
-.vbs-silver .kpi__container .kpi.green {
+.vbs-silver .kpi__container .kpi.green * {
   color: #7fb75b;
 }
 
 .vbs-black .kpi__container .kpi.red,
-.vbs-silver .kpi__container .kpi.red {
+.vbs-silver .kpi__container .kpi.red * {
   color: #b31442;
 }
 
