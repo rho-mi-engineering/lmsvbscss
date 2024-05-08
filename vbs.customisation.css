@@ -138,6 +138,8 @@
   --t-font-color__highlight--dark: gray;
   --t-font-color__highlight--light: gray;
 
+  --t-background-color__shaded4: #474747;
+
   --t-font-color__heading: white;
   --t-font-color__header: white;
 
@@ -1008,7 +1010,7 @@
 
 .vbs-black .info.info__box {
   border-color: var(--t-base-color__focus);
-  background-color: var(--t-background-color__shaded2);
+  background-color: var(--t-background-color__shaded4);
 }
 
 .vbs-silver .info.info__box {
@@ -1101,6 +1103,13 @@
 .vbs-black .performanceSupport__target-box {
   background-color: var(--t-base-color__highlight--dark);
 }
+
+
+.vbs-black .performanceSupport__skillProfileTitle {
+   color: var(--t-font-color__highlight--dark);
+}
+
+
 
 
 
