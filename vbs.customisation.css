@@ -939,6 +939,11 @@
   border-color: var(--t-base-color__highlight--dark);
 }
 
+.vbs-black .btn--primary:enabled svg,
+.vbs-black .btn--primary:enabled svg .svg-color {
+  fill: var(--t-base-color__highlight--dark)!important;
+}
+
 .vbs-silver .btn--primary {
   background-color: var(--t-base-color__highlight--light) !important;
   color: var(--t-base-color__highlight) !important;
@@ -1008,12 +1013,6 @@
 .vbs-silver a {
   color: var(--t-font-color__link--dark);
 }
-
-.vbs-black button:enabled svg,
-.vbs-black button:enabled svg .svg-color {
-  fill: var(--t-base-color__highlight--dark)!important;
-}
-
 
 .vbs-black button {
   background-color: var(--t-background-color__shaded2);
