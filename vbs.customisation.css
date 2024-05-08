@@ -630,6 +630,12 @@
   border-right-color: var(--t-background-color__shaded3);
 }
 
+.vbs-black div[class*="__ribbon"] > button,
+.vbs-silver div[class*="__ribbon"] > button {
+  background-color: unset;
+}
+
+
 .vbs-black div.favorites__ribbon > button > svg > .svg-color,
 .vbs-silver div.favorites__ribbon > button > svg > .svg-color {
   fill: var(--t-base-color__focus);
