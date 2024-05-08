@@ -846,13 +846,14 @@
 .vbs-black div.l-element--striped-reverse .l-container > div {
   background-color: var(--t-base-color__highlight--dark);
   margin: unset;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
+
 }
 
 .vbs-silver div.l-element--striped-reverse .l-container > div {
   background-color: var(--t-background-color__shaded1);
   margin: unset;
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 
 .vbs-silver div.l-element--striped .svg-color {
