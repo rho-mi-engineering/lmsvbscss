@@ -847,7 +847,6 @@
   background-color: var(--t-base-color__highlight--dark);
   margin: unset;
   padding: 1rem 1rem 0 1rem;
-
 }
 
 .vbs-silver div.l-element--striped-reverse .l-container > div {
@@ -1323,4 +1322,8 @@
 
 .vbs-black .my-recommendations__summary-subject-container li {
   background-color: var(--t-base-color__focus);
+}
+
+.vbs-silver .my-team__table__cell--highlight {
+  color: var(--t-font-color__link--dark);
 }
