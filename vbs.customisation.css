@@ -1058,6 +1058,10 @@
   color: var(--t-base-color__highlight--light);
 }
 
+.vbs-black .scroller__container svg {
+  fill: var(--t-base-color__highlight--light);
+}
+
 .vbs-silver .catalog-design-buttons svg path,
 .vbs-silver .catalog-design-buttons svg g {
   fill: var(--t-base-color__highlight--light);
