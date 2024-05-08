@@ -218,10 +218,6 @@
   filter: invert(100%);
 }
 
-.vbs-silver div.header__slogan {
-  /* color: var(--t-font-color__base); */
-}
-
 .vbs-black .header__information *,
 .vbs-silver .header__information * {
   color: var(--t-font-color__base) !important;
@@ -252,6 +248,11 @@
   border-bottom: 4px solid var(--t-base-color__focus);
 }
 
+.vbs-black .header__information select {
+  background-color: var(--t-base-color__highlight);
+}
+
+
 .vbs-black div.header__navigation > a:hover,
 .vbs-silver div.header__navigation > a:hover {
   border-bottom: 4px solid var(--t-base-color__focus);
@@ -265,6 +266,24 @@
   min-height: unset;
   top: 98px;
 }
+
+.vbs-black div.login__background,
+.vbs-silver div.login__background {
+  background-color: var(--t-base-color__highlight);
+  background-image: unset;
+}
+
+.vbs-black div.login__whitepanel,
+.vbs-silver div.login__whitepanel {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black div.input-password_password-with-visibility-control button,
+.vbs-silver div.input-password_password-with-visibility-control button {
+  background-color: transparent;
+  fill: var(--t-background-color__base);
+}
+
 
 .vbs-silver div.menu {
   background-color: var(--t-base-color__highlight--light);
@@ -339,8 +358,8 @@
   margin: 1rem auto;
 }
 
-.vbs-black div.home__edit-page button,
-.vbs-silver div.home__edit-page button {
+.vbs-black div[class*="__edit-page"] button,
+.vbs-silver div[class*="__edit-page"] button {
   margin-right: 0;
   background-color: var(--t-base-color__highlight--dark);
   color: var(--t-font-color__highlight);
@@ -592,7 +611,7 @@
   background-color: var(--t-base-color__highlight);
 }
 
-.vbs-black div.favorites__ribbon  {
+.vbs-black div.favorites__ribbon {
   background-color: var(--t-font-color__highlight--dark);
 }
 
@@ -601,7 +620,7 @@
   border-right-color: var(--t-font-color__highlight--dark);
 }
 
-.vbs-silver div.favorites__ribbon  {
+.vbs-silver div.favorites__ribbon {
   top: -1px;
   background-color: var(--t-background-color__shaded3);
 }
@@ -610,7 +629,6 @@
   border-left-color: var(--t-background-color__shaded3);
   border-right-color: var(--t-background-color__shaded3);
 }
-
 
 .vbs-black div.favorites__ribbon > button > svg > .svg-color,
 .vbs-silver div.favorites__ribbon > button > svg > .svg-color {
@@ -807,7 +825,6 @@
   background-color: var(--t-base-color__highlight--dark);
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-bottom: 0.5rem;
 }
 
 .vbs-silver div.l-element--striped .l-container > div {
@@ -827,7 +844,7 @@
 }
 
 .vbs-silver div.l-element--striped .svg-color {
-  filter: invert(1)
+  filter: invert(1);
 }
 
 .vbs-black label.lesson-tools svg,
@@ -878,32 +895,36 @@
 }
 
 /* inputs */
-.vbs-black main input,
-.vbs-black main select,
-.vbs-black main textarea {
+.vbs-black input,
+.vbs-black select,
+.vbs-black textarea {
   background-color: var(--t-base-color__highlight--light);
   color: var(--t-base-color__highlight--dark);
 }
 
-.vbs-black main .k-label {
+.vbs-black .k-label {
   z-index: 1;
   color: var(--t-font-color__highlight--dark) !important;
 }
 
-.vbs-silver main input,
-.vbs-silver main select,
-.vbs-silver main textarea {
+.vbs-silver input,
+.vbs-silver select,
+.vbs-silver textarea {
   color: var(--t-base-color__highlight--light);
 }
 
-.vbs-silver main input[type="checkbox"] {
+.vbs-silver input[type="checkbox"] {
   border: 1px solid var(--t-base-color__highlight--light);
+}
+
+.vbs-black input[type="checkbox"] {
+  border-color: var(--t-base-color__highlight);
 }
 
 .vbs-black .btn--primary {
   background-color: var(--t-font-color__highlight) !important;
   color: var(--t-base-color__highlight) !important;
-  border-color: var(--t-font-color__highlight);
+  border-color: var(--t-base-color__highlight--dark);
 }
 
 .vbs-silver .btn--primary {
@@ -919,7 +940,7 @@
 
 .vbs-black .btn--primary:disabled {
   background-color: var(--t-background-color__shaded2) !important;
-  border-color: var(--t-background-color__dark) !important;
+  border-color: var(--t-base-color__highlight--light);
 }
 
 .vbs-silver .btn--primary:disabled {
@@ -927,8 +948,24 @@
   border-color: var(--t-background-color__shaded3) !important;
 }
 
-.vbs-black .btn--primary:hover:not(:disabled),
-.vbs-silver .btn--primary:hover:not(:disabled) {
+.vbs-black .btn--primary:hover:enabled,
+.vbs-silver .btn--primary:hover:enabled {
+  background-color: var(--t-base-color__focus) !important;
+  color: var(--t-font-color__highlight) !important;
+}
+
+.vbs-black .button--secondary {
+  background-color: var(--t-font-color__highlight) !important;
+  color: var(--t-base-color__highlight) !important;
+  border-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .button--secondary:disabled {
+  background-color: var(--t-background-color__shaded2) !important;
+  border-color: var(--t-base-color__highlight--light);
+}
+
+.vbs-black .button--secondary:hover:enabled {
   background-color: var(--t-base-color__focus) !important;
   color: var(--t-font-color__highlight) !important;
 }
@@ -937,13 +974,35 @@
   color: var(--t-base-color__focus);
 }
 
-.vbs-silver .btn--sm {
+.vbs-silver .btn--sm:not(:disabled) {
   background-color: var(--t-background-color__shaded1);
+}
+
+.vbs-black .btn--sm:not(:disabled) {
+  background-color: var(--t-base-color__highlight--light);
+  color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .btn--sm:hover:not(:disabled) {
+  background-color: var(--t-base-color__focus);
+}
+
+.vbs-black .btn--sm:disabled {
+  background-color: var(--t-background-color__shaded2) !important;
+  border-color: var(--t-base-color__highlight--light);
 }
 
 .vbs-black a,
 .vbs-silver a {
   color: var(--t-font-color__link--dark);
+}
+
+.vbs-black button svg {
+  fill: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black button {
+  background-color: var(--t-background-color__shaded2);
 }
 
 .vbs-black
@@ -1027,21 +1086,17 @@
 }
 
 /* My Team */
-.vbs-black .my-team__table {
+.vbs-black .k-grid {
   border: none;
 }
 
-.vbs-black .my-team__table .k-grid-header {
-  border: none;
-}
-
-.vbs-black .my-team__table .k-grid-header * {
-  background-color: var(--t-base-color__focus);
-}
-
-.vbs-black .my-team__table .k-grid-header > * {
+.vbs-black .k-grid-header {
   background-color: var(--t-base-color__focus);
   border: none;
+}
+
+.vbs-black .k-grid-header .k-table-thead {
+  background-color: var(--t-base-color__focus);
 }
 
 .vbs-black .k-table-tbody {
@@ -1049,7 +1104,7 @@
   color: var(--t-font-color__base);
 }
 
-.vbs-black .my-team__table .k-grid-header input[type="checkbox"]:focus {
+.vbs-black .k-grid-header input[type="checkbox"]:focus {
   border-color: var(--t-base-color__highlight--light);
 }
 
@@ -1070,10 +1125,6 @@
   background-color: var(--t-background-color__shaded1);
 }
 
-.vbs-black .k-input.k-datepicker svg {
-  filter: invert(1);
-}
-
 /* employee */
 .vbs-black .skill__table.print-container {
   background-color: var(--t-base-color__highlight--dark);
@@ -1081,17 +1132,36 @@
   margin-top: 15px;
 }
 
-.vbs-silver .skill__table.print-container div[role="rowgroup"] div.skill-item div[role=row] {
+.vbs-silver
+  .skill__table.print-container
+  div[role="rowgroup"]
+  div.skill-item
+  div[role="row"] {
   background-color: var(--t-background-color__shaded1);
 }
 
-.vbs-silver .skill__table.print-container div[role="rowgroup"] div.skill-item div[role=row] svg,
-.vbs-silver .skill__table.print-container div[role="rowgroup"] div.skill-item div[role=row] legend {
+.vbs-silver
+  .skill__table.print-container
+  div[role="rowgroup"]
+  div.skill-item
+  div[role="row"]
+  svg,
+.vbs-silver
+  .skill__table.print-container
+  div[role="rowgroup"]
+  div.skill-item
+  div[role="row"]
+  legend {
   filter: invert(1);
   border-color: var(--t-base-color__highlight);
 }
 
-.vbs-silver .skill__table.print-container div[role="rowgroup"] div.skill-item div[role=row] fieldset {
+.vbs-silver
+  .skill__table.print-container
+  div[role="rowgroup"]
+  div.skill-item
+  div[role="row"]
+  fieldset {
   border-color: var(--t-background-color__dark);
 }
 
@@ -1100,18 +1170,36 @@
   color: var(--t-base-color__highlight--dark);
 }
 
+.vbs-black
+  div[role="row"]
+  .skill__table__row--highPrio
+  .small-cell.skill_details--flex
+  > div:first-child
+  svg:first-child {
+  filter: invert(1);
+}
+
+.vbs-black
+  .performanceSupport__targetProfile-box
+  div[role="row"]
+  :not(.skill__table__row--highPrio)
+  .small-cell.skill_details--flex
+  > div:last-child
+  svg:first-child {
+  filter: invert(1);
+}
+
 .vbs-black .performanceSupport__target-box {
   background-color: var(--t-base-color__highlight--dark);
 }
 
-
-.vbs-black .performanceSupport__skillProfileTitle {
-   color: var(--t-font-color__highlight--dark);
+.vbs-black .performanceSupport__targetProfile-box {
+  background-color: var(--t-base-color__highlight--dark);
 }
 
-
-
-
+.vbs-black .performanceSupport__skillProfileTitle svg {
+  filter: invert(1);
+}
 
 /* beantragung kompetenz */
 .vbs-black .button-link {
@@ -1165,22 +1253,52 @@
 }
 
 .vbs-silver div.trainer__area > div,
-.vbs-silver div.trainer__area div.title  {
+.vbs-silver div.trainer__area div.title {
   background-color: var(--t-background-color__shaded1);
 }
 
-
-.vbs-black .trainer-next-session .zebra:nth-of-type(even) {
+.vbs-black .zebra:nth-of-type(even) {
   color: var(--t-font-color__highlight--light);
 }
 
-.vbs-black .trainer-next-session .zebra:nth-of-type(even) svg {
-  filter: invert(1);
+.vbs-black .zebra:nth-of-type(even) svg,
+.vbs-black .zebra:nth-of-type(even) button svg {
+  fill: var(--t-base-color__highlight);
 }
 
 .vbs-silver .employee-detail__container svg .svg-color {
   fill: var(--t-font-color);
 }
 
-.vbs-silver #ItemDetailSummaryPanel {
+.vbs-black .badge__filled {
+  color: var(--t-font-color__highlight--light);
+}
+
+.vbs-black .error-summary {
+  background-color: transparent;
+}
+
+.vbs-black .my-recommendations__summary {
+  background-color: var(--t-base-color__highlight--dark);
+  border-radius: 5px;
+}
+
+.vbs-black .my-recommendations__summary * {
+  color: var(--t-base-color__highlight--light)!important;
+}
+
+.vbs-black .my-recommendations__summary .item-icon__icon {
+  border: 1px solid var(--t-base-color__highlight--light);
+  height: 51px;
+  width: 51px;
+}
+
+.vbs-black .my-recommendations__summary .item-icon__icon img {
+  filter: invert(1);
+  height: 41px;
+  width: 41px;
+}
+
+.vbs-black .my-recommendations__summary-subject-container li {
+  background-color: var(--t-base-color__focus);
 }
