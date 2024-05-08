@@ -630,10 +630,16 @@
   border-right-color: var(--t-background-color__shaded3);
 }
 
+.vbs-black div.catalog-design-buttons > button,
+.vbs-silver div.catalog-design-buttons > button {
+  background-color: unset;
+}
+
 .vbs-black div[class*="__ribbon"] > button,
 .vbs-silver div[class*="__ribbon"] > button {
   background-color: unset;
 }
+
 
 
 .vbs-black div.favorites__ribbon > button > svg > .svg-color,
@@ -1003,9 +1009,11 @@
   color: var(--t-font-color__link--dark);
 }
 
-.vbs-black button svg {
-  fill: var(--t-base-color__highlight--dark);
+.vbs-black button:enabled svg,
+.vbs-black button:enabled svg .svg-color {
+  fill: var(--t-base-color__highlight--dark)!important;
 }
+
 
 .vbs-black button {
   background-color: var(--t-background-color__shaded2);
@@ -1044,6 +1052,10 @@
 
 .vbs-silver .scroller__container span {
   color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .scroller__container span {
+  color: var(--t-base-color__highlight--light);
 }
 
 .vbs-silver .catalog-design-buttons svg path,
