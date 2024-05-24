@@ -209,6 +209,12 @@ main,
   display: none;
 }
 
+.header__slogan font,
+.vbs-black .header__slogan font {
+  color: var(--t-font-color__highlight);
+}
+
+
 div.l-container,
 .vbs-black div.l-container,
 .vbs-silver div.l-container {
@@ -280,7 +286,7 @@ div.menu,
   border: none;
   height: 34px;
   min-height: unset;
-  top: 98px;
+  top: 173px;
 }
 
 div.login__background,
@@ -430,17 +436,10 @@ div.news__inner-container,
 .vbs-black div.news__inner-container,
 .vbs-silver div.news__inner-container {
   width: 100%;
-  height: 100%;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-div.news__panel-container > div,
-.vbs-black div.news__panel-container > div,
-.vbs-silver div.news__panel-container > div {
-  width: 100%;
-  height: 100%;
 }
 
 .news__inner-container .heading__Level1,
@@ -461,12 +460,6 @@ div.news__panel-container > div,
   color: var(--t-font-color__heading) !important;
 }
 
-div.news__container .news__container--large,
-.vbs-black div.news__container .news__container--large,
-.vbs-silver div.news__container .news__container--large {
-  width: 100% !important;
-}
-
 .home__panel,
 .vbs-black .home__panel,
 .vbs-silver .home__panel {
@@ -482,7 +475,6 @@ div.news__container .news__container--large,
     div.news__panel-container
     .news__container.news__container--large {
     width: 100%;
-    height: 100% !important;
   }
 }
 
@@ -701,7 +693,7 @@ div.catalog-design-buttons > button,
 div[class*="__ribbon"] > button,
 .vbs-black div[class*="__ribbon"] > button,
 .vbs-silver div[class*="__ribbon"] > button {
-  background-color: unset;
+  background-color: unset!important;
 }
 
 div.favorites__ribbon > button > svg > .svg-color,
@@ -780,13 +772,6 @@ div.favorites__ribbon > button > svg > .svg-color,
   fill: var(--t-base-color__highlight--light);
 }
 
-.item-box-tile .item-summary__folder__image,
-.vbs-black .item-box-tile .item-summary__folder__image,
-.item-box-tile-small .item-summary__folder__image,
-.vbs-black .item-box-tile-small .item-summary__folder__image {
-  filter: invert(1);
-}
-
 /* KATALOG LIST VIEW */
 
 li.item-list,
@@ -815,11 +800,6 @@ li.item-list .item-icon__icon path.svg-transparent,
 .vbs-black li.item-list .item-icon__icon path.svg-transparent,
 .vbs-silver li.item-list .item-icon__icon path.svg-transparent {
   fill: transparent;
-}
-
-li.item-list .item-icon__icon.folder__image,
-.vbs-black li.item-list .item-icon__icon.folder__image {
-  filter: invert(1);
 }
 
 li.item-list .heading__Level4 p,
@@ -919,7 +899,7 @@ div.l-element--striped-reverse,
 .vbs-silver div.l-element--striped,
 .vbs-silver div.l-element--striped-reverse {
   color: var(--t-font-color__highlight);
-  background-color: var(--t-base-color__highlight);
+  background-color: var(--t-base-color__highlight)!important;
   margin-bottom: 1rem;
 }
 
@@ -1133,8 +1113,8 @@ a,
   color: var(--t-font-color__link--dark);
 }
 
-button,
-.vbs-black button {
+button:not(.button-link.quicksearch__button),
+.vbs-black button:not(.button-link.quicksearch__button) {
   background-color: var(--t-background-color__shaded2);
 }
 
@@ -1280,7 +1260,11 @@ table.tp-table,
 
 .k-input.k-datepicker button,
 .vbs-black .k-input.k-datepicker button {
-  background-color: var(--t-background-color__shaded1);
+  background-color: var(--t-background-color__shaded3);
+}
+
+.vbs-black .k-input.k-datepicker button svg {
+  fill: var(--t-base-color__highlight--dark);
 }
 
 /* employee */
@@ -1485,4 +1469,27 @@ div.trainer__area div.title,
 
 .vbs-silver .my-team__table__cell--highlight {
   color: var(--t-font-color__link--dark);
+}
+
+/* LOGIN SCHEME */
+div.login__scheme,
+.vbs-black div.login__scheme {
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__highlight);
+}
+
+/* SWIPER */
+.vbs-black,
+span.swiper-pagination-bullet {
+  background-color: var(--t-base-color__highlight--light);
+}
+
+.vbs-black .item-summary.report-item-summary,
+.vbs-black .item-summary.report-item-summary * {
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__highlight);
+}
+
+.vbs-black ol.tp__contentsV2 li.item-summary__modulV2 .tp__contentsV2__heading-container {
+  background-color: var(--t-base-color__highlight--dark);
 }
