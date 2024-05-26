@@ -289,6 +289,13 @@ div.menu,
   top: 173px;
 }
 
+div.menu.menu--login,
+.vbs-black div.menu.menu--login,
+.vbs-silver div.menu.menu--login {
+  top: 107px;
+}
+
+
 div.login__background,
 .vbs-black div.login__background,
 .vbs-silver div.login__background {
@@ -968,6 +975,10 @@ div.item-summary__mylists,
   color: var(--t-font-color__highlight);
 }
 
+.stepper .steps li::before {
+  background-color: var(--t-background-color__shaded3);
+}
+
 .stepper .steps li.active,
 .vbs-black .stepper .steps li.active {
   background-color: var(--t-base-color__highlight);
@@ -1045,10 +1056,33 @@ input[type="checkbox"],
   color: var(--t-base-color__highlight) !important;
 }
 
+.vbs-black button.button-link,
+.vbs-black button.button-link--colorized-dark {
+  background-color: unset;
+}
+
+
+.vbs-black button.button-link {
+  color: var(--t-font-color__link--dark);
+}
+
+.vbs-black .k-button-solid-base:not(:disabled) {
+  background-color: var(--t-base-color__highlight--dark);
+  border-color: var(--t-base-color__highlight--dark);
+  transition: background-color 0.3s ease;
+}
+
+.vbs-black .k-button-solid-base:hover:not(:disabled) {
+  background-color: var(--t-background-color__shaded3);
+  border-color: var(--t-background-color__shaded3);
+}
+
+
 .btn--primary:disabled,
 .vbs-black .btn--primary:disabled {
   background-color: var(--t-background-color__shaded2) !important;
   border-color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__disabled) !important;
 }
 
 .vbs-silver .btn--primary:disabled {
@@ -1113,9 +1147,14 @@ a,
   color: var(--t-font-color__link--dark);
 }
 
-button:not(.button-link.quicksearch__button),
-.vbs-black button:not(.button-link.quicksearch__button) {
-  background-color: var(--t-background-color__shaded2);
+div.quicksearch__container button,
+.vbs-black div.quicksearch__container button {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .k-combobox button.k-button, 
+.vbs-black .k-dropdownlist button.k-button {
+  background-color: var(--t-base-color__highlight--dark);
 }
 
 .vbs-black
@@ -1348,12 +1387,6 @@ div[role="row"] .skill__table__row--highPrio,
   filter: invert(1);
 }
 
-/* beantragung kompetenz */
-.button-link,
-.vbs-black .button-link {
-  color: var(--t-background-color__base);
-}
-
 /* trainer  */
 div.trainer__area,
 .vbs-black div.trainer__area,
@@ -1479,8 +1512,8 @@ div.login__scheme,
 }
 
 /* SWIPER */
-.vbs-black,
-span.swiper-pagination-bullet {
+span.swiper-pagination-bullet, 
+.vbs-black span.swiper-pagination-bullet {
   background-color: var(--t-base-color__highlight--light);
 }
 
@@ -1492,4 +1525,17 @@ span.swiper-pagination-bullet {
 
 .vbs-black ol.tp__contentsV2 li.item-summary__modulV2 .tp__contentsV2__heading-container {
   background-color: var(--t-base-color__highlight--dark);
+  border: 1px solid var(--t-base-color__highlight);
+}
+
+/* Trainer Booking View */
+.vbs-black .trainer-bookings__table thead * {
+  background-color: var(--t-base-color__focus);
+}
+
+.vbs-black tfoot .k-table-row *,
+.vbs-black tbody .k-table-row *,
+.vbs-black .k-table-row.k-group-footer * {
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__highlight);
 }
