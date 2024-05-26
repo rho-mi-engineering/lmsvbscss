@@ -199,6 +199,7 @@ main,
   background-color: var(--t-base-color__highlight);
   position: sticky;
   top: 0;
+  height: 173px;
 }
 
 .header__logo > img.header__logo,
@@ -210,8 +211,9 @@ main,
 }
 
 .header__slogan font,
-.vbs-black .header__slogan font {
-  color: var(--t-font-color__highlight);
+.vbs-black .header__slogan font,
+  .vbs-silver .header__slogan font {
+  color: var(--t-font-color__base);
 }
 
 
@@ -391,6 +393,10 @@ a.menu__icon:last-child,
   margin-right: 0;
 }
 
+.vbs-silver button svg .svg-color {
+  fill: var(--t-font-color__base);
+}
+
 /* home */
 div.home__edit-page,
 .vbs-black div.home__edit-page,
@@ -413,6 +419,10 @@ div[class*="__edit-page"] button,
   background-color: var(--t-base-color__highlight--light);
 }
 
+.vbs-silver div.home__edit-page button svg .svg-color {
+  fill: var(--t-font-color__highlight);
+}
+
 div.home__edit-page button svg,
 .vbs-black div.home__edit-page button svg,
 .vbs-silver div.home__edit-page button svg {
@@ -420,9 +430,7 @@ div.home__edit-page button svg,
   width: 24px;
 }
 
-.vbs-silver div.home__edit-page button svg .svg-color {
-  fill: var(--t-font-color__highlight);
-}
+
 
 div.home__background-image,
 .vbs-black div.home__background-image,
@@ -895,8 +903,8 @@ div.lesson__toolbar *,
   color: var(--t-font-color__highlight--light);
 }
 
-.vbs-silver div.lesson__toolbar svg {
-  filter: invert(1);
+.vbs-silver div.lesson__toolbar svg .svg-color {
+  fill: var(--t-font-color__base);
 }
 
 div.l-element--striped,
@@ -1010,19 +1018,28 @@ textarea,
 }
 
 .k-label,
-.vbs-black .k-label {
-  z-index: 1;
-  color: var(--t-font-color__highlight--dark) !important;
+.vbs-black .k-label{
+z-index: 1;
+color: var(--t-font-color__highlight--dark) !important;
+}
+
+.vbs-silver .k-label {
+  color: var(--t-background-color__shaded3) !important;
 }
 
 .vbs-silver input,
 .vbs-silver select,
 .vbs-silver textarea {
   color: var(--t-base-color__highlight--light);
+  background-color: var(--t-font-color__base);
 }
 
 .vbs-silver input[type="checkbox"] {
-  border: 1px solid var(--t-base-color__highlight--light);
+  border: 1px solid var(--t-base-color__highlight);
+}
+
+.vbs-silver .k-checkbox:checked {
+  background-color: var(--t-font-color__base);
 }
 
 input[type="checkbox"],
@@ -1091,7 +1108,9 @@ input[type="checkbox"],
 }
 
 .btn--primary:hover:enabled,
+.vbs-black a.btn--primary:hover,
 .vbs-black .btn--primary:hover:enabled,
+.vbs-silver a.btn--primary:hover,
 .vbs-silver .btn--primary:hover:enabled {
   background-color: var(--t-base-color__focus) !important;
   color: var(--t-font-color__highlight) !important;
@@ -1114,6 +1133,15 @@ input[type="checkbox"],
 .vbs-black .button--secondary:hover:enabled {
   background-color: var(--t-base-color__focus) !important;
   color: var(--t-font-color__highlight) !important;
+}
+
+.vbs-silver .button--secondary {
+  background-color: var(--t-base-color__highlight--light)!important;
+  color: var(--t-font-color__highlight) !important;
+}
+
+.vbs-silver .button--secondary:disabled {
+  background-color: var(--t-background-color__shaded3)!important;
 }
 
 .vbs-silver .button--secondary:hover {
@@ -1156,6 +1184,40 @@ div.quicksearch__container button,
 .vbs-black .k-dropdownlist button.k-button {
   background-color: var(--t-base-color__highlight--dark);
 }
+
+.vbs-silver .k-combobox button.k-button, 
+.vbs-silver .k-multiselect button.k-button, 
+.vbs-silver .k-dropdownlist button.k-button {
+  background-color: var(--t-font-color__base);
+}
+
+.vbs-silver .k-combobox button.k-button svg path, 
+.vbs-silver .k-multiselect button.k-button svg path, 
+.vbs-silver .k-dropdownlist button.k-button svg path{
+  color: var(--t-font-color__highlight);
+}
+
+.vbs-silver .k-combobox, 
+.vbs-silver .k-multiselect, 
+.vbs-silver .k-dropdownlist {
+  background-color: var(--t-font-color__base);
+}
+
+
+.vbs-silver .k-combobox span.k-clear-value, 
+.vbs-silver .k-multiselect span.k-clear-value, 
+.vbs-silver .k-dropdownlist span.k-clear-value {
+  background-color: var(--t-font-color__base);
+  opacity: 1;
+}
+
+.vbs-silver .k-combobox span.k-clear-value svg path, 
+.vbs-silver .k-multiselect span.k-clear-value svg path, 
+.vbs-silver .k-dropdownlist span.k-clear-value svg path{
+  color: var(--t-font-color__highlight);
+}
+
+
 
 .vbs-black
   .skill__table
@@ -1201,8 +1263,12 @@ table.tp-table,
 }
 
 .scroller__container svg,
-.vbs-black .scroller__container svg {
+.vbs-black .scroller__container .svg-color {
   fill: var(--t-base-color__highlight--light);
+}
+
+.vbs-silver .scroller__container .svg-color {
+  fill: var(--t-base-color__highlight--dark);
 }
 
 .vbs-silver .catalog-design-buttons svg path,
@@ -1300,6 +1366,14 @@ table.tp-table,
 .k-input.k-datepicker button,
 .vbs-black .k-input.k-datepicker button {
   background-color: var(--t-background-color__shaded3);
+}
+
+.vbs-silver .k-input.k-datepicker button {
+  background-color: var(--t-font-color__base);
+}
+
+.vbs-silver .k-input.k-datepicker button svg {
+  fill: var(--t-base-color__highlight);
 }
 
 .vbs-black .k-input.k-datepicker button svg {
@@ -1538,4 +1612,69 @@ span.swiper-pagination-bullet,
 .vbs-black .k-table-row.k-group-footer * {
   background-color: var(--t-base-color__highlight--dark);
   color: var(--t-font-color__highlight);
+}
+
+.vbs-silver .__react_component_tooltip {
+  color: var(--t-font-color__base);
+}
+
+.vbs-silver .__react_component_tooltip.type-highlight {
+  background-color: var(--t-background-color__shaded1);
+  border-color: var(--t-background-color__shaded1);
+}
+
+.vbs-silver .__react_component_tooltip.type-highlight::after {
+  background-color: var(--t-background-color__shaded1);
+}
+
+.vbs-silver .__react_component_tooltip.type-highlight::before {
+  z-index: -1;
+}
+
+/* GLOSSAR */
+.vbs-black .glossar-details__item--not-viewed,
+.vbs-silver .glossar-details__item--not-viewed {
+  color: var(--t-base-color__focus);
+}
+
+.vbs-silver .glossar-details__item__header {
+  background-color: var(--t-background-color__shaded1);
+}
+
+/* BETREUEN */
+.vbs-silver .report-item__item-type .svg-color {
+  fill: var(--t-base-color__highlight--light);
+}
+
+.vbs-silver .item-summary a:focus * {
+  color: var(--t-base-color__focus);
+}
+
+/* Klassendetails */
+.vbs-silver .lesson-tools--status .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+/* SEARCH */
+.vbs-silver .search-result__summary,
+.vbs-black .search-result__summary {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-silver .search-result__summary {
+  background-color: var(--t-background-color__shaded1);
+}
+
+.vbs-black .search-result__summary *{
+  color: var(--t-font-color__base);
+}
+
+.vbs-black .search-result__summary .item-summary__mini-detail__summary-icon svg path.svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-black .search-result__container .search-result__summary .search-result__summary-subject-container li:hover,
+.vbs-silver .search-result__container .search-result__summary .search-result__summary-subject-container li:hover {
+  background-color: var(--t-base-color__focus);
 }
