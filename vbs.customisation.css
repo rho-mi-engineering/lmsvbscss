@@ -1030,7 +1030,7 @@ color: var(--t-font-color__highlight--dark) !important;
 .vbs-silver input,
 .vbs-silver select,
 .vbs-silver textarea {
-  color: var(--t-base-color__highlight--light);
+  color: var(--t-base-color__highlight);
   background-color: var(--t-font-color__base);
 }
 
@@ -1149,7 +1149,7 @@ input[type="checkbox"],
 }
 
 .vbs-silver .btn--sm:not(:disabled) {
-  background-color: var(--t-background-color__shaded1);
+  background-color: var(--t-base-color__highlight--light);
 }
 
 .btn--sm:not(:disabled),
@@ -1193,7 +1193,7 @@ div.quicksearch__container button,
 
 .vbs-silver .k-combobox button.k-button svg path, 
 .vbs-silver .k-multiselect button.k-button svg path, 
-.vbs-silver .k-dropdownlist button.k-button svg path{
+.vbs-silver .k-dropdownlist button.k-button svg path {
   color: var(--t-font-color__highlight);
 }
 
@@ -1201,6 +1201,19 @@ div.quicksearch__container button,
 .vbs-silver .k-multiselect, 
 .vbs-silver .k-dropdownlist {
   background-color: var(--t-font-color__base);
+  color: var(--t-font-color__highlight);
+}
+
+.vbs-silver .k-combobox *, 
+.vbs-silver .k-multiselect *, 
+.vbs-silver .k-dropdownlist * {
+  color: var(--t-font-color__highlight);
+}
+
+.vbs-silver .k-combobox .k-input-value-text, 
+.vbs-silver .k-multiselect .k-input-value-text, 
+.vbs-silver .k-dropdownlist .k-input-value-text {
+  color: var(--t-font-color__highlight);
 }
 
 
@@ -1677,4 +1690,48 @@ span.swiper-pagination-bullet,
 .vbs-black .search-result__container .search-result__summary .search-result__summary-subject-container li:hover,
 .vbs-silver .search-result__container .search-result__summary .search-result__summary-subject-container li:hover {
   background-color: var(--t-base-color__focus);
+}
+
+/* GAMIFICATION */
+.vbs-black div.gamification-history__detail {
+  background-color: var(--t-base-color__highlight--dark);
+  padding: 0 1rem;
+  border-radius: 5px;
+}
+
+.vbs-black .gamification-history .gamification-history__detail ol li {
+  background: linear-gradient(to right, var(--t-base-color__highlight--dark) 130px,var(--t-base-color__focus) 130px 137px, var(--t-base-color__highlight--dark) 137px);
+}
+
+.vbs-black .gamification-history .gamification-history__detail .item-icon {
+  background: var(--t-base-color__highlight--dark);
+}
+
+/* F2F Buchungen */
+.vbs-black .f2fBookings__container .f2fBookings__summary-content {
+  background-color: var(--t-base-color__highlight--dark);
+  border-radius: 5px;
+  padding: 0.2rem 0 0 0;
+  color: var(--t-font-color__base);
+}
+
+.vbs-black .f2fBookings__container .item-summary__mini-detail__overall-container .item-summary__mini-detail__icon-and-detail-container .item-summary__mini-detail__detail-container * {
+  color: var(--t-font-color__base);
+}
+
+.vbs-silver .skill__table__row.row__content .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-silver .skill__table .skill__table____row--collapsable .skill__details__box {
+  border-color: var(--t-base-color__highlight--light);
+  color: var(--t-font-color__base);
+}
+
+.vbs-silver .skill__table .skill__table____row--collapsable .skill__details__box .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-silver .skill__details__box legend {
+  color: var(--t-font-color__base);
 }
