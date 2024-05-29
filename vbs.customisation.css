@@ -126,10 +126,13 @@
   --t-base-color__highlight--light: white;
   --t-base-color__focus: rgb(205, 14, 14);
 
-  --t-font-color__error: rgb(205, 14, 14);
   --t-font-color__error--dark: rgb(205, 14, 14);
   --t-base-color__error: rgb(205, 14, 14);
   --t-base-color__error--dark: rgb(205, 14, 14);
+
+  --t-font-color__success: #7fb75b;
+  --t-font-color__warning: #e0c93a;
+  --t-font-color__error: #b31442;
 
   --t-base-color__highlight-r: 31;
   --t-base-color__highlight-g: 31;
@@ -158,10 +161,13 @@
   --t-base-color__highlight--light: #1f1f1f;
   --t-base-color__focus: rgb(205, 14, 14);
 
-  --t-font-color__error: rgb(205, 14, 14);
   --t-font-color__error--dark: rgb(205, 14, 14);
   --t-base-color__error: rgb(205, 14, 14);
   --t-base-color__error--dark: rgb(205, 14, 14);
+
+  --t-font-color__success: #7fb75b;
+  --t-font-color__warning: #e0c93a;
+  --t-font-color__error: #b31442;
 
   --t-base-color__highlight-r: 182;
   --t-base-color__highlight-g: 179;
@@ -746,6 +752,12 @@ div.favorites__ribbon > button > svg > .svg-color,
   background-color: transparent;
 }
 
+.item-summary__detail__footer .svg-white,
+.vbs-black .item-summary__detail__footer .svg-white,
+.vbs-silver .item-summary__detail__footer .svg-white {
+  fill: var(--t-font-color__base);
+}
+
 .item-box-tile *,
 .vbs-black .item-box-tile *,
 .item-box-tile-small *,
@@ -943,10 +955,6 @@ div.l-element--striped-reverse .l-container > div,
   padding: 1rem 1rem 0 1rem;
 }
 
-.vbs-silver div.l-element--striped .svg-color {
-  filter: invert(1);
-}
-
 label.lesson-tools svg,
 .vbs-black label.lesson-tools svg,
 .vbs-silver label.lesson-tools svg {
@@ -992,7 +1000,12 @@ div.item-summary__mylists,
   background-color: var(--t-base-color__highlight);
 }
 
+.vbs-silver .stepper .steps li.active {
+  background-color: var(--t-background-color__shaded3);
+}
+
 .stepper .steps li,
+.vbs-silver .stepper .steps li.active,
 .vbs-black .stepper .steps li {
   z-index: 1;
 }
@@ -1004,6 +1017,10 @@ div.item-summary__mylists,
 .request-wizard__main .step-navigation,
 .vbs-black .request-wizard__main .step-navigation {
   border-color: var(--t-background-color__shaded1);
+}
+
+.vbs-silver .step-content__block .svg-color {
+  fill: var(--t-font-color__highlight--light);
 }
 
 /* inputs */
@@ -1135,17 +1152,22 @@ input[type="checkbox"],
   color: var(--t-font-color__highlight) !important;
 }
 
+.vbs-silver .btn--secondary,
 .vbs-silver .button--secondary {
-  background-color: var(--t-base-color__highlight--light)!important;
-  color: var(--t-font-color__highlight) !important;
+  background-color: var(--t-base-color__highlight--dark)!important;
+  color: var(--t-font-color__base) !important;
+  border: 1px solid var(--t-base-color__highlight--light)!important;
 }
 
+.vbs-silver .btn--secondary:disabled,
 .vbs-silver .button--secondary:disabled {
   background-color: var(--t-background-color__shaded3)!important;
 }
 
+.vbs-silver .btn--secondary:hover,
 .vbs-silver .button--secondary:hover {
-  color: var(--t-base-color__focus);
+  background-color: var(--t-base-color__focus)!important;
+  opacity: 1;
 }
 
 .vbs-silver .btn--sm:not(:disabled) {
@@ -1230,6 +1252,10 @@ div.quicksearch__container button,
   color: var(--t-font-color__highlight);
 }
 
+.vbs-silver .k-multiselect div.k-chip .k-icon,
+.vbs-silver .k-multiselect div.k-chip span.k-chip-label {
+  color: var(--t-font-color__highlight--dark);
+} 
 
 
 .vbs-black
@@ -1244,6 +1270,12 @@ div[role="rowgroup"]:first-child div[role="row"]:first-child,
 .vbs-black div[role="rowgroup"]:first-child div[role="row"]:first-child,
 .vbs-silver div[role="rowgroup"]:first-child div[role="row"]:first-child {
   background-color: var(--t-base-color__focus);
+}
+
+div.modal__content__item div[role="rowgroup"]:first-child div[role="row"]:first-child,
+.vbs-black div.modal__content__item div[role="rowgroup"]:first-child div[role="row"]:first-child,
+.vbs-silver div.modal__content__item div[role="rowgroup"]:first-child div[role="row"]:first-child {
+  background-color: unset;
 }
 
 div[role="rowgroup"] div[role="row"],
@@ -1734,4 +1766,36 @@ span.swiper-pagination-bullet,
 
 .vbs-silver .skill__details__box legend {
   color: var(--t-font-color__base);
+}
+
+.vbs-silver ul li.success {
+  color: var(--t-font-color__success);
+}
+
+.vbs-silver ul li.error {
+  color: var(--t-font-color__error);
+}
+
+.vbs-silver ul li.warning {
+  color: var(--t-font-color__warning);
+}
+
+.vbs-silver .item-summary__tp-detail__summary-icon .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-silver .lesson-surveys_container .lesson-surveys_titles div:first-of-type,
+.vbs-silver .lesson-surveys_list li {
+  color: var(--t-font-color__base);
+}
+
+
+.vbs-silver .lesson-surveys_list li svg {
+  border: 2px solid var(--t-font-color__base);
+  border-radius: 5px;
+}
+
+.vbs-silver .lesson-surveys_list li .svg-white,
+.vbs-silver .lesson-surveys_list li .svg-color {
+  fill: var(--t-font-color__base);
 }
