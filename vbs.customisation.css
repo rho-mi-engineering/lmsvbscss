@@ -241,22 +241,26 @@ a > div.header__logo,
   filter: invert(100%);
 }
 
-.header__information *,
-.vbs-black .header__information *,
-.vbs-silver .header__information * {
-  color: var(--t-font-color__base) !important;
+.header__information .header__navigation select,
+.header__information .header__navigation a,
+.header__information .header__navigation .header__space,
+.vbs-black .header__information .header__navigation select,
+.vbs-black .header__information .header__navigation .header__space,
+.vbs-black .header__information .header__navigation a,
+.vbs-silver .header__information .header__navigation .header__space,
+.vbs-silver .header__information .header__navigation select,
+.vbs-silver .header__information .header__navigation a {
+  color: var(--t-font-color__base);
   font-size: 12px;
   text-transform: uppercase;
 }
 
-.header__information select:not(:focus),
-.vbs-black .header__information select:not(:focus),
-.vbs-silver .header__information select:not(:focus) {
-  border: none;
+.vbs-silver .header__information .header__language-container select {
+  color: var(--t-font-color__highlight);
 }
 
-.header__information select .vbs-silver .header__information select,
-.vbs-black .header__information select .vbs-silver .header__information select {
+.vbs-silver .header__information select,
+.vbs-black .header__information select {
   border-bottom: 4px solid transparent;
   transition-property: all;
   transition-duration: 0.3s;
@@ -758,6 +762,11 @@ div.favorites__ribbon > button > svg > .svg-color,
   fill: var(--t-font-color__base);
 }
 
+.vbs-silver .item-summary__detail__footer .detail-footer button {
+  background-color: var(--t-background-color__shaded1);
+}
+
+
 .item-box-tile *,
 .vbs-black .item-box-tile *,
 .item-box-tile-small *,
@@ -1100,18 +1109,6 @@ input[type="checkbox"],
   color: var(--t-font-color__link--dark);
 }
 
-.vbs-black .k-button-solid-base:not(:disabled) {
-  background-color: var(--t-base-color__highlight--dark);
-  border-color: var(--t-base-color__highlight--dark);
-  transition: background-color 0.3s ease;
-}
-
-.vbs-black .k-button-solid-base:hover:not(:disabled) {
-  background-color: var(--t-background-color__shaded3);
-  border-color: var(--t-background-color__shaded3);
-}
-
-
 .btn--primary:disabled,
 .vbs-black .btn--primary:disabled {
   background-color: var(--t-background-color__shaded2) !important;
@@ -1191,10 +1188,26 @@ input[type="checkbox"],
   border-color: var(--t-base-color__highlight--light);
 }
 
+
+.vbs-silver .btn--md:enabled {
+  background-color: var(--t-base-color__highlight--light);
+  color: var(--t-base-color__highlight--dark);
+}
+
+
+.vbs-silver .btn--md:hover:enabled {
+  background-color: var(--t-base-color__focus);
+}
+
 a,
 .vbs-black a,
 .vbs-silver a {
   color: var(--t-font-color__link--dark);
+}
+
+.vbs-silver .error,
+.vbs-black .error {
+  color: var(--t-font-color__error);
 }
 
 div.quicksearch__container button,
@@ -1410,19 +1423,17 @@ table.tp-table,
 
 .k-input.k-datepicker button,
 .vbs-black .k-input.k-datepicker button {
-  background-color: var(--t-background-color__shaded3);
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__highlight);
 }
 
 .vbs-silver .k-input.k-datepicker button {
-  background-color: var(--t-font-color__base);
+  background-color: var(--t-background-color__base);
+  border: 1px solid var(--t-font-color__highlight--dark);
 }
 
 .vbs-silver .k-input.k-datepicker button svg {
-  fill: var(--t-base-color__highlight);
-}
-
-.vbs-black .k-input.k-datepicker button svg {
-  fill: var(--t-base-color__highlight--dark);
+  fill: var(--t-font-color__highlight--dark);
 }
 
 /* employee */
@@ -1642,6 +1653,10 @@ span.swiper-pagination-bullet,
   color: var(--t-font-color__highlight);
 }
 
+.vbs-black .ol.tp__contentsV2 li.item-summary__modulV2 {
+  margin-top: 0;
+}
+
 .vbs-black ol.tp__contentsV2 li.item-summary__modulV2 .tp__contentsV2__heading-container {
   background-color: var(--t-base-color__highlight--dark);
   border: 1px solid var(--t-base-color__highlight);
@@ -1663,15 +1678,20 @@ span.swiper-pagination-bullet,
   color: var(--t-font-color__base);
 }
 
+.vbs-silver .__react_component_tooltip.type-dark,
 .vbs-silver .__react_component_tooltip.type-highlight {
   background-color: var(--t-background-color__shaded1);
   border-color: var(--t-background-color__shaded1);
 }
 
+.vbs-silver .__react_component_tooltip.type-dark::after,
 .vbs-silver .__react_component_tooltip.type-highlight::after {
   background-color: var(--t-background-color__shaded1);
 }
 
+.vbs-black .__react_component_tooltip.type-dark::before,
+.vbs-black .__react_component_tooltip.type-highlight::before,
+.vbs-silver .__react_component_tooltip.type-dark::before,
 .vbs-silver .__react_component_tooltip.type-highlight::before {
   z-index: -1;
 }
@@ -1798,4 +1818,19 @@ span.swiper-pagination-bullet,
 .vbs-silver .lesson-surveys_list li .svg-white,
 .vbs-silver .lesson-surveys_list li .svg-color {
   fill: var(--t-font-color__base);
+}
+
+
+.vbs-black .tp__registration-scheduleList {
+  margin-top: 0;
+}
+
+.vbs-silver .gamification-highscore__ranking-list .gamification-highscore__rank-cell {
+  background-color: var(--t-background-color__shaded1);
+  color: var(--t-font-color__base);
+}
+
+.vbs-black .gamification-highscore__ranking-list .gamification-highscore__rank-cell {
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__base);
 }
