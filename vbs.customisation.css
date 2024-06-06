@@ -256,7 +256,7 @@ a > div.header__logo,
 }
 
 .vbs-silver .header__information .header__language-container select {
-  color: var(--t-font-color__highlight);
+  background-color: var(--t-base-color__highlight);
 }
 
 .vbs-silver .header__information select,
@@ -709,6 +709,22 @@ div.favorites__ribbon::before,
   border-right-color: var(--t-background-color__shaded3);
 }
 
+.vbs-black div.glossary__ribbon,
+.vbs-silver div.glossary__ribbon {
+  background-color: var(--t-background-color__shaded3);
+}
+
+.vbs-silver div.glossary__ribbon {
+  top: -1px;
+}
+
+.vbs-black div.glossary__ribbon::before,
+.vbs-silver div.glossary__ribbon::before {
+  border-left-color: var(--t-background-color__shaded3);
+  border-right-color: var(--t-background-color__shaded3);
+}
+
+
 div.catalog-design-buttons > button,
 .vbs-black div.catalog-design-buttons > button,
 .vbs-silver div.catalog-design-buttons > button {
@@ -1060,6 +1076,11 @@ color: var(--t-font-color__highlight--dark) !important;
   background-color: var(--t-font-color__base);
 }
 
+.vbs-silver select option {
+  color: var(--t-base-color__highlight);
+}
+
+
 .vbs-silver input[type="checkbox"] {
   border: 1px solid var(--t-base-color__highlight);
 }
@@ -1251,6 +1272,9 @@ div.quicksearch__container button,
   color: var(--t-font-color__highlight);
 }
 
+.vbs-silver .k-input-inner::placeholder {
+  color: var(--t-background-color__shaded3);
+}
 
 .vbs-silver .k-combobox span.k-clear-value, 
 .vbs-silver .k-multiselect span.k-clear-value, 
@@ -1270,13 +1294,11 @@ div.quicksearch__container button,
   color: var(--t-font-color__highlight--dark);
 } 
 
-
-.vbs-black
-  .skill__table
-  .skill__table____row--collapsable
-  .skill__details__box__legend {
+.vbs-silver .skill__table .skill__table____row--collapsable .skill__details__box__legend ,
+.vbs-black .skill__table .skill__table____row--collapsable .skill__details__box__legend {
   color: var(--t-base-color__highlight--light);
 }
+
 
 /* table */
 div[role="rowgroup"]:first-child div[role="row"]:first-child,
@@ -1464,7 +1486,7 @@ table.tp-table,
   div.skill-item
   div[role="row"]
   legend {
-  filter: invert(1);
+  fill: var(--t-font-color__highlight--dark);
   border-color: var(--t-base-color__highlight);
 }
 
@@ -1833,4 +1855,36 @@ span.swiper-pagination-bullet,
 .vbs-black .gamification-highscore__ranking-list .gamification-highscore__rank-cell {
   background-color: var(--t-base-color__highlight--dark);
   color: var(--t-font-color__base);
+}
+
+.vbs-silver .my-certificates__certificate-table .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+div#F2FCoursesPanel .svg-color,
+div#CompletitionRequirementsPanel .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-black .participant-list-tutor__user-table tbody {
+  color: var(--t-base-color__highlight);
+}
+
+.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table tr:nth-child(2n+1),
+.vbs-silver .participant-list-tutor__container .participant-list-tutor__user-table tr:nth-child(2n+1) {
+  background-color: var(--t-background-color__shaded1);
+}
+
+.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table tr:nth-child(2n) {
+  background-color: var(--t-background-color__shaded3);
+}
+
+.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table td,
+.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table th {
+  border-color: var(--t-background-color__shaded5);
+}
+
+.vbs-black .whitepanel h1 ,
+.vbs-black .whitepanel {
+  color: var(--t-font-color__input);
 }
