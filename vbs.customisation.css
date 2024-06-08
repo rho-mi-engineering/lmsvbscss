@@ -1912,6 +1912,7 @@ div#CompletitionRequirementsPanel .svg-color {
 .participant-list-tutor__logo {
   background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png)!important;
   transform: rotate(-90deg) translateY(50px)!important;
+  filter: invert(1)!important;
 }
 
 .participant-list-tutor__user-table tbody {
