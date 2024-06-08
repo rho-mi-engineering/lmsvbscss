@@ -29,10 +29,10 @@
 
   --t-background-color__base: #fff;
   --t-background-color__shaded1: #f6f6f6;
+  --t-background-color__shaded2: var(--t-base-color__highlight--dark);
   --t-background-color__shaded3: #a4a4a4;
   --t-background-color__shaded4: #474747;
   --t-background-color__shaded5: #4b4b4b;
-  --t-background-color__shaded2: var(--t-background-color__shaded3);
   --t-background-color__dark: #000;
   --t-background-color__footer: #333;
   --t-background-color__header: #fff;
@@ -1909,11 +1909,11 @@ div#CompletitionRequirementsPanel .svg-color {
   fill: var(--t-font-color__base);
 }
 
-@media print {
-	div.participant-list-tutor__container div.participant-list.tutor__header .participant-list-tutor__logo{
-		background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png);
-  }
+div.participant-list-tutor__container .participant-list.tutor__header .participant-list-tutor__logo {
+  background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png)!important;
+  transform: rotate(-90deg) translateY(50px);
 }
+
 
 .participant-list-tutor__user-table tbody {
   color: var(--t-base-color__highlight);
@@ -1922,10 +1922,6 @@ div#CompletitionRequirementsPanel .svg-color {
 .participant-list-tutor__container
   .participant-list-tutor__user-table
   tr:nth-child(2n + 1) {
-  background-color: var(--t-background-color__shaded1);
-}
-
-.vbs-silver iframe#printWindow html {
   background-color: var(--t-background-color__shaded1);
 }
 
