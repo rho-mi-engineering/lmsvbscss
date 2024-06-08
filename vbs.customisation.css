@@ -29,10 +29,10 @@
 
   --t-background-color__base: #fff;
   --t-background-color__shaded1: #f6f6f6;
-  --t-background-color__shaded2: var(--t-base-color__highlight--dark);
   --t-background-color__shaded3: #a4a4a4;
   --t-background-color__shaded4: #474747;
   --t-background-color__shaded5: #4b4b4b;
+  --t-background-color__shaded2: var(--t-background-color__shaded3);
   --t-background-color__dark: #000;
   --t-background-color__footer: #333;
   --t-background-color__header: #fff;
@@ -218,10 +218,9 @@ main,
 
 .header__slogan font,
 .vbs-black .header__slogan font,
-  .vbs-silver .header__slogan font {
+.vbs-silver .header__slogan font {
   color: var(--t-font-color__base);
 }
-
 
 div.l-container,
 .vbs-black div.l-container,
@@ -306,7 +305,6 @@ div.menu.menu--login,
 .vbs-silver div.menu.menu--login {
   top: 107px;
 }
-
 
 div.login__background,
 .vbs-black div.login__background,
@@ -440,8 +438,6 @@ div.home__edit-page button svg,
   width: 24px;
 }
 
-
-
 div.home__background-image,
 .vbs-black div.home__background-image,
 .vbs-silver div.home__background-image {
@@ -455,6 +451,12 @@ div.news__panel-container .news__container.news__container--large,
 .vbs-silver div.news__panel-container .news__container.news__container--large {
   border: none;
   box-shadow: none;
+}
+
+div.news__inner-container-carousel *,
+.vbs-black div.news__inner-container-carousel *,
+.vbs-silver div.news__inner-container-carousel * {
+  color: inherit;
 }
 
 div.news__inner-container,
@@ -724,7 +726,6 @@ div.favorites__ribbon::before,
   border-right-color: var(--t-background-color__shaded3);
 }
 
-
 div.catalog-design-buttons > button,
 .vbs-black div.catalog-design-buttons > button,
 .vbs-silver div.catalog-design-buttons > button {
@@ -734,7 +735,7 @@ div.catalog-design-buttons > button,
 div[class*="__ribbon"] > button,
 .vbs-black div[class*="__ribbon"] > button,
 .vbs-silver div[class*="__ribbon"] > button {
-  background-color: unset!important;
+  background-color: unset !important;
 }
 
 div.favorites__ribbon > button > svg > .svg-color,
@@ -781,7 +782,6 @@ div.favorites__ribbon > button > svg > .svg-color,
 .vbs-silver .item-summary__detail__footer .detail-footer button {
   background-color: var(--t-background-color__shaded1);
 }
-
 
 .item-box-tile *,
 .vbs-black .item-box-tile *,
@@ -951,7 +951,7 @@ div.l-element--striped-reverse,
 .vbs-silver div.l-element--striped,
 .vbs-silver div.l-element--striped-reverse {
   color: var(--t-font-color__highlight);
-  background-color: var(--t-base-color__highlight)!important;
+  background-color: var(--t-base-color__highlight) !important;
   margin-bottom: 1rem;
 }
 
@@ -1060,9 +1060,9 @@ textarea,
 }
 
 .k-label,
-.vbs-black .k-label{
-z-index: 1;
-color: var(--t-font-color__highlight--dark) !important;
+.vbs-black .k-label {
+  z-index: 1;
+  color: var(--t-font-color__highlight--dark) !important;
 }
 
 .vbs-silver .k-label {
@@ -1079,7 +1079,6 @@ color: var(--t-font-color__highlight--dark) !important;
 .vbs-silver select option {
   color: var(--t-base-color__highlight);
 }
-
 
 .vbs-silver input[type="checkbox"] {
   border: 1px solid var(--t-base-color__highlight);
@@ -1124,7 +1123,6 @@ input[type="checkbox"],
 .vbs-black button.button-link--colorized-dark {
   background-color: unset;
 }
-
 
 .vbs-black button.button-link {
   color: var(--t-font-color__link--dark);
@@ -1172,19 +1170,19 @@ input[type="checkbox"],
 
 .vbs-silver .btn--secondary,
 .vbs-silver .button--secondary {
-  background-color: var(--t-base-color__highlight--dark)!important;
+  background-color: var(--t-base-color__highlight--dark) !important;
   color: var(--t-font-color__base) !important;
-  border: 1px solid var(--t-base-color__highlight--light)!important;
+  border: 1px solid var(--t-base-color__highlight--light) !important;
 }
 
 .vbs-silver .btn--secondary:disabled,
 .vbs-silver .button--secondary:disabled {
-  background-color: var(--t-background-color__shaded3)!important;
+  background-color: var(--t-background-color__shaded3) !important;
 }
 
 .vbs-silver .btn--secondary:hover,
 .vbs-silver .button--secondary:hover {
-  background-color: var(--t-base-color__focus)!important;
+  background-color: var(--t-base-color__focus) !important;
   opacity: 1;
 }
 
@@ -1209,12 +1207,10 @@ input[type="checkbox"],
   border-color: var(--t-base-color__highlight--light);
 }
 
-
 .vbs-silver .btn--md:enabled {
   background-color: var(--t-base-color__highlight--light);
   color: var(--t-base-color__highlight--dark);
 }
-
 
 .vbs-silver .btn--md:hover:enabled {
   background-color: var(--t-base-color__focus);
@@ -1236,38 +1232,38 @@ div.quicksearch__container button,
   background-color: var(--t-base-color__highlight--dark);
 }
 
-.vbs-black .k-combobox button.k-button, 
+.vbs-black .k-combobox button.k-button,
 .vbs-black .k-dropdownlist button.k-button {
   background-color: var(--t-base-color__highlight--dark);
 }
 
-.vbs-silver .k-combobox button.k-button, 
-.vbs-silver .k-multiselect button.k-button, 
+.vbs-silver .k-combobox button.k-button,
+.vbs-silver .k-multiselect button.k-button,
 .vbs-silver .k-dropdownlist button.k-button {
   background-color: var(--t-font-color__base);
 }
 
-.vbs-silver .k-combobox button.k-button svg path, 
-.vbs-silver .k-multiselect button.k-button svg path, 
+.vbs-silver .k-combobox button.k-button svg path,
+.vbs-silver .k-multiselect button.k-button svg path,
 .vbs-silver .k-dropdownlist button.k-button svg path {
   color: var(--t-font-color__highlight);
 }
 
-.vbs-silver .k-combobox, 
-.vbs-silver .k-multiselect, 
+.vbs-silver .k-combobox,
+.vbs-silver .k-multiselect,
 .vbs-silver .k-dropdownlist {
   background-color: var(--t-font-color__base);
   color: var(--t-font-color__highlight);
 }
 
-.vbs-silver .k-combobox *, 
-.vbs-silver .k-multiselect *, 
+.vbs-silver .k-combobox *,
+.vbs-silver .k-multiselect *,
 .vbs-silver .k-dropdownlist * {
   color: var(--t-font-color__highlight);
 }
 
-.vbs-silver .k-combobox .k-input-value-text, 
-.vbs-silver .k-multiselect .k-input-value-text, 
+.vbs-silver .k-combobox .k-input-value-text,
+.vbs-silver .k-multiselect .k-input-value-text,
 .vbs-silver .k-dropdownlist .k-input-value-text {
   color: var(--t-font-color__highlight);
 }
@@ -1276,29 +1272,34 @@ div.quicksearch__container button,
   color: var(--t-background-color__shaded3);
 }
 
-.vbs-silver .k-combobox span.k-clear-value, 
-.vbs-silver .k-multiselect span.k-clear-value, 
+.vbs-silver .k-combobox span.k-clear-value,
+.vbs-silver .k-multiselect span.k-clear-value,
 .vbs-silver .k-dropdownlist span.k-clear-value {
   background-color: var(--t-font-color__base);
   opacity: 1;
 }
 
-.vbs-silver .k-combobox span.k-clear-value svg path, 
-.vbs-silver .k-multiselect span.k-clear-value svg path, 
-.vbs-silver .k-dropdownlist span.k-clear-value svg path{
+.vbs-silver .k-combobox span.k-clear-value svg path,
+.vbs-silver .k-multiselect span.k-clear-value svg path,
+.vbs-silver .k-dropdownlist span.k-clear-value svg path {
   color: var(--t-font-color__highlight);
 }
 
 .vbs-silver .k-multiselect div.k-chip .k-icon,
 .vbs-silver .k-multiselect div.k-chip span.k-chip-label {
   color: var(--t-font-color__highlight--dark);
-} 
-
-.vbs-silver .skill__table .skill__table____row--collapsable .skill__details__box__legend ,
-.vbs-black .skill__table .skill__table____row--collapsable .skill__details__box__legend {
-  color: var(--t-base-color__highlight--light);
 }
 
+.vbs-silver
+  .skill__table
+  .skill__table____row--collapsable
+  .skill__details__box__legend,
+.vbs-black
+  .skill__table
+  .skill__table____row--collapsable
+  .skill__details__box__legend {
+  color: var(--t-base-color__highlight--light);
+}
 
 /* table */
 div[role="rowgroup"]:first-child div[role="row"]:first-child,
@@ -1307,9 +1308,17 @@ div[role="rowgroup"]:first-child div[role="row"]:first-child,
   background-color: var(--t-base-color__focus);
 }
 
-div.modal__content__item div[role="rowgroup"]:first-child div[role="row"]:first-child,
-.vbs-black div.modal__content__item div[role="rowgroup"]:first-child div[role="row"]:first-child,
-.vbs-silver div.modal__content__item div[role="rowgroup"]:first-child div[role="row"]:first-child {
+div.modal__content__item
+  div[role="rowgroup"]:first-child
+  div[role="row"]:first-child,
+.vbs-black
+  div.modal__content__item
+  div[role="rowgroup"]:first-child
+  div[role="row"]:first-child,
+.vbs-silver
+  div.modal__content__item
+  div[role="rowgroup"]:first-child
+  div[role="row"]:first-child {
   background-color: unset;
 }
 
@@ -1664,7 +1673,7 @@ div.login__scheme,
 }
 
 /* SWIPER */
-span.swiper-pagination-bullet, 
+span.swiper-pagination-bullet,
 .vbs-black span.swiper-pagination-bullet {
   background-color: var(--t-base-color__highlight--light);
 }
@@ -1679,7 +1688,10 @@ span.swiper-pagination-bullet,
   margin-top: 0;
 }
 
-.vbs-black ol.tp__contentsV2 li.item-summary__modulV2 .tp__contentsV2__heading-container {
+.vbs-black
+  ol.tp__contentsV2
+  li.item-summary__modulV2
+  .tp__contentsV2__heading-container {
   background-color: var(--t-base-color__highlight--dark);
   border: 1px solid var(--t-base-color__highlight);
 }
@@ -1753,16 +1765,28 @@ span.swiper-pagination-bullet,
   background-color: var(--t-background-color__shaded1);
 }
 
-.vbs-black .search-result__summary *{
+.vbs-black .search-result__summary * {
   color: var(--t-font-color__base);
 }
 
-.vbs-black .search-result__summary .item-summary__mini-detail__summary-icon svg path.svg-color {
+.vbs-black
+  .search-result__summary
+  .item-summary__mini-detail__summary-icon
+  svg
+  path.svg-color {
   fill: var(--t-font-color__base);
 }
 
-.vbs-black .search-result__container .search-result__summary .search-result__summary-subject-container li:hover,
-.vbs-silver .search-result__container .search-result__summary .search-result__summary-subject-container li:hover {
+.vbs-black
+  .search-result__container
+  .search-result__summary
+  .search-result__summary-subject-container
+  li:hover,
+.vbs-silver
+  .search-result__container
+  .search-result__summary
+  .search-result__summary-subject-container
+  li:hover {
   background-color: var(--t-base-color__focus);
 }
 
@@ -1774,7 +1798,12 @@ span.swiper-pagination-bullet,
 }
 
 .vbs-black .gamification-history .gamification-history__detail ol li {
-  background: linear-gradient(to right, var(--t-base-color__highlight--dark) 130px,var(--t-base-color__focus) 130px 137px, var(--t-base-color__highlight--dark) 137px);
+  background: linear-gradient(
+    to right,
+    var(--t-base-color__highlight--dark) 130px,
+    var(--t-base-color__focus) 130px 137px,
+    var(--t-base-color__highlight--dark) 137px
+  );
 }
 
 .vbs-black .gamification-history .gamification-history__detail .item-icon {
@@ -1789,7 +1818,12 @@ span.swiper-pagination-bullet,
   color: var(--t-font-color__base);
 }
 
-.vbs-black .f2fBookings__container .item-summary__mini-detail__overall-container .item-summary__mini-detail__icon-and-detail-container .item-summary__mini-detail__detail-container * {
+.vbs-black
+  .f2fBookings__container
+  .item-summary__mini-detail__overall-container
+  .item-summary__mini-detail__icon-and-detail-container
+  .item-summary__mini-detail__detail-container
+  * {
   color: var(--t-font-color__base);
 }
 
@@ -1797,12 +1831,19 @@ span.swiper-pagination-bullet,
   fill: var(--t-font-color__base);
 }
 
-.vbs-silver .skill__table .skill__table____row--collapsable .skill__details__box {
+.vbs-silver
+  .skill__table
+  .skill__table____row--collapsable
+  .skill__details__box {
   border-color: var(--t-base-color__highlight--light);
   color: var(--t-font-color__base);
 }
 
-.vbs-silver .skill__table .skill__table____row--collapsable .skill__details__box .svg-color {
+.vbs-silver
+  .skill__table
+  .skill__table____row--collapsable
+  .skill__details__box
+  .svg-color {
   fill: var(--t-font-color__base);
 }
 
@@ -1831,7 +1872,6 @@ span.swiper-pagination-bullet,
   color: var(--t-font-color__base);
 }
 
-
 .vbs-silver .lesson-surveys_list li svg {
   border: 2px solid var(--t-font-color__base);
   border-radius: 5px;
@@ -1842,17 +1882,20 @@ span.swiper-pagination-bullet,
   fill: var(--t-font-color__base);
 }
 
-
 .vbs-black .tp__registration-scheduleList {
   margin-top: 0;
 }
 
-.vbs-silver .gamification-highscore__ranking-list .gamification-highscore__rank-cell {
+.vbs-silver
+  .gamification-highscore__ranking-list
+  .gamification-highscore__rank-cell {
   background-color: var(--t-background-color__shaded1);
   color: var(--t-font-color__base);
 }
 
-.vbs-black .gamification-highscore__ranking-list .gamification-highscore__rank-cell {
+.vbs-black
+  .gamification-highscore__ranking-list
+  .gamification-highscore__rank-cell {
   background-color: var(--t-base-color__highlight--dark);
   color: var(--t-font-color__base);
 }
@@ -1866,25 +1909,32 @@ div#CompletitionRequirementsPanel .svg-color {
   fill: var(--t-font-color__base);
 }
 
-.vbs-black .participant-list-tutor__user-table tbody {
+.participant-list-tutor__user-table tbody {
   color: var(--t-base-color__highlight);
 }
 
-.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table tr:nth-child(2n+1),
-.vbs-silver .participant-list-tutor__container .participant-list-tutor__user-table tr:nth-child(2n+1) {
+.participant-list-tutor__container
+  .participant-list-tutor__user-table
+  tr:nth-child(2n + 1) {
   background-color: var(--t-background-color__shaded1);
 }
 
-.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table tr:nth-child(2n) {
+.vbs-silver iframe#printWindow html {
+  background-color: var(--t-background-color__shaded1);
+}
+
+.participant-list-tutor__container
+  .participant-list-tutor__user-table
+  tr:nth-child(2n) {
   background-color: var(--t-background-color__shaded3);
 }
 
-.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table td,
-.vbs-black .participant-list-tutor__container .participant-list-tutor__user-table th {
+.participant-list-tutor__container .participant-list-tutor__user-table td,
+.participant-list-tutor__container .participant-list-tutor__user-table th {
   border-color: var(--t-background-color__shaded5);
 }
 
-.vbs-black .whitepanel h1 ,
+.vbs-black .whitepanel h1,
 .vbs-black .whitepanel {
   color: var(--t-font-color__input);
 }
