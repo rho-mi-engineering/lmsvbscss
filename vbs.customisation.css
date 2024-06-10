@@ -1936,7 +1936,7 @@ div#CompletitionRequirementsPanel .svg-color {
   border-color: var(--t-background-color__shaded5);
 }
 
-.vbs-black .whitepanel h1,
+div.whitepanel,
 .vbs-black .whitepanel {
-  color: var(--t-font-color__input);
+  background-color: var(--t-base-color__highlight--dark);
 }
