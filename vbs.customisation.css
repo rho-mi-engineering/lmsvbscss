@@ -222,6 +222,14 @@ main,
   color: var(--t-font-color__base);
 }
 
+@media (min-width: 697px) and (max-width: 1045px) {
+  .header__slogan font,
+  .vbs-black .header__slogan font,
+  .vbs-silver .header__slogan font {
+    font-size: var(--t-font-size__header--s) !important;
+  }
+}
+
 div.l-container,
 .vbs-black div.l-container,
 .vbs-silver div.l-container {
@@ -509,6 +517,7 @@ h1.heading__Title,
 .vbs-black h1.heading__Title,
 .vbs-silver h1.heading__Title {
   font-weight: 501;
+  line-height: normal;
 }
 
 .kpi__container,
@@ -516,7 +525,7 @@ h1.heading__Title,
 .vbs-silver .kpi__container {
   gap: 4px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   position: relative;
 }
 
@@ -885,6 +894,10 @@ li.item-list .item-summary__mini-detail__title-container,
 .vbs-black .navigation__navigation-point-text,
 .vbs-silver .navigation__navigation-point-text {
   color: var(--t-font-color__base);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
 }
 
 .vbs-silver .navigation__navigation-point-icon svg {
@@ -1077,7 +1090,7 @@ textarea,
 }
 
 .vbs-silver select option {
-  color: var(--t-base-color__highlight);
+  color: var(--t-base-color__highlight--light);
 }
 
 .vbs-silver input[type="checkbox"] {
@@ -1464,6 +1477,21 @@ table.tp-table,
 }
 
 .vbs-silver .k-input.k-datepicker button svg {
+  fill: var(--t-font-color__highlight--dark);
+}
+
+.k-input.k-datetimepicker button,
+.vbs-black .k-input.k-datepicker button {
+  background-color: var(--t-base-color__highlight--dark);
+  color: var(--t-font-color__highlight);
+}
+
+.vbs-silver .k-input.k-datetimepicker button {
+  background-color: var(--t-background-color__base);
+  border: 1px solid var(--t-font-color__highlight--dark);
+}
+
+.vbs-silver .k-input.k-datetimepicker button svg {
   fill: var(--t-font-color__highlight--dark);
 }
 
@@ -1910,9 +1938,9 @@ div#CompletitionRequirementsPanel .svg-color {
 }
 
 .participant-list-tutor__logo {
-  background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png)!important;
-  transform: rotate(-90deg) translateY(50px)!important;
-  filter: invert(1)!important;
+  background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png) !important;
+  transform: rotate(-90deg) translateY(50px) !important;
+  filter: invert(1) !important;
 }
 
 .participant-list-tutor__user-table tbody {
@@ -1938,5 +1966,24 @@ div#CompletitionRequirementsPanel .svg-color {
 
 div.whitepanel,
 .vbs-black .whitepanel {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black div.releaseLockedLessons__table {
+  background-color: var(--t-base-color__highlight);
+}
+
+.vbs-black
+  div.releaseLockedLessons-container
+  div.releaseLockedLessons__table
+  div[role="rowgroup"]:first-child
+  div[role="row"]:first-child {
+  background-color: var(--t-base-color__focus);
+}
+
+.vbs-black
+  div.releaseLockedLessons-container
+  div.releaseLockedLessons__table
+  div[role="row"] {
   background-color: var(--t-base-color__highlight--dark);
 }
