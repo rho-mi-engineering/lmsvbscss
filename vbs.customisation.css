@@ -791,6 +791,16 @@ div.favorites__ribbon > button > svg > .svg-color,
   background-color: transparent;
 }
 
+.vbs-black .item-summary__detail__title,
+.vbs-silver .item-summary__detail__title {
+  height: 100px;
+}
+
+.vbs-black .item-summary__folder__title ,
+.vbs-silver .item-summary__folder__title {
+    height: auto;
+}
+
 .item-summary__detail__footer .svg-white,
 .vbs-black .item-summary__detail__footer .svg-white,
 .vbs-silver .item-summary__detail__footer .svg-white {
@@ -811,6 +821,19 @@ div.favorites__ribbon > button > svg > .svg-color,
 .vbs-silver .item-box-tile *,
 .vbs-silver .item-box-tile-small * {
   color: var(--t-font-color__highlight--light);
+}
+
+.vbs-black .item-box-tile.border > a,
+.vbs-silver .item-box-tile.border > a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.vbs-black .item-summary__folder__footer,
+.vbs-silver .item-summary__folder__footer {
+  margin-top: auto;
 }
 
 .item-icon__icon,
