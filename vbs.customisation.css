@@ -796,6 +796,20 @@ div.favorites__ribbon > button > svg > .svg-color,
   height: 100px;
 }
 
+@media (min-width: 0px) and (max-width: 697px) {
+  .vbs-black .item-summary__detail__title,
+  .vbs-silver .item-summary__detail__title {
+    height: 80px;
+  }
+}
+
+@media (min-width: 698px) and (max-width: 1024px) {
+  .vbs-black .item-summary__detail__title,
+  .vbs-silver .item-summary__detail__title {
+    height: 80px;
+  }
+}
+
 .vbs-black .item-summary__folder__title ,
 .vbs-silver .item-summary__folder__title {
     height: auto;
