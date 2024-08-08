@@ -1135,8 +1135,8 @@ textarea,
   background-color: var(--t-font-color__base);
 }
 
-.vbs-silver select option {
-  color: var(--t-base-color__highlight--light);
+.vbs-silver main select option {
+  color: var(--t-base-color__highlight--dark);
 }
 
 .vbs-silver input[type="checkbox"] {
@@ -1782,6 +1782,10 @@ span.swiper-pagination-bullet,
   color: var(--t-font-color__highlight);
 }
 
+.vbs-black .booking-view__container .trainer-bookings__table tr:nth-child(2n) {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
 .vbs-silver .__react_component_tooltip {
   color: var(--t-font-color__base);
 }
@@ -1978,6 +1982,18 @@ span.swiper-pagination-bullet,
   fill: var(--t-font-color__base);
 }
 
+.vbs-black .my-certificates__certificate-table {
+  margin-bottom: 1rem;
+}
+
+.vbs-black .my-certificates__certificate-table thead {
+  color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black .my-certificates__certificate-table tr:nth-child(2n) {
+  background-color: var(--t-base-color__highlight--dark);
+}
+
 div#F2FCoursesPanel .svg-color,
 div#CompletitionRequirementsPanel .svg-color {
   fill: var(--t-font-color__base);
@@ -2032,4 +2048,20 @@ div.whitepanel,
   div.releaseLockedLessons__table
   div[role="row"] {
   background-color: var(--t-base-color__highlight--dark);
+}
+
+.vbs-black ul.eportfolio__edit-steps li {
+  display: flex;
+  align-items: center;
+
+}
+
+.vbs-black ul.eportfolio__edit-steps li.eportfolio__edit-steps--highlight > div:first-child {
+  background-color: var(--t-base-color__focus)!important;
+}
+
+.vbs-black .eportfolio__edit-steps > li > div:first-child {
+  background-color: var(--t-base-color__highlight--dark);
+  margin-bottom: 0;
+  padding: 0;
 }
