@@ -1462,7 +1462,7 @@ table.tp-table,
   background-color: var(--t-base-color__highlight--dark);
 }
 
-.modal__container .modal__content__item__header,
+div.modal__container div.modal__content > div.modal__content__item__header,
 .vbs-black .modal__container .modal__content__item__header {
   background-color: var(--t-base-color__highlight--dark);
 }
@@ -2064,4 +2064,12 @@ div.whitepanel,
   background-color: var(--t-base-color__highlight--dark);
   margin-bottom: 0;
   padding: 0;
+}
+
+.vbs-black .eportfolio__add-button > div:first-child {
+  background-color: transparent
+}
+
+.vbs-black .k-checkbox:disabled + .k-checkbox-label {
+  color: var(--t-font-color__disabled);
 }
