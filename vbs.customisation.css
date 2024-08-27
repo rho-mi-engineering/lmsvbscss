@@ -529,7 +529,6 @@ h1.heading__Title,
   position: relative;
 }
 
-
 @media (min-width: 900px) {
   .kpi__container,
   .vbs-black .kpi__container,
@@ -810,9 +809,9 @@ div.favorites__ribbon > button > svg > .svg-color,
   }
 }
 
-.vbs-black .item-summary__folder__title ,
+.vbs-black .item-summary__folder__title,
 .vbs-silver .item-summary__folder__title {
-    height: auto;
+  height: auto;
 }
 
 .item-summary__detail__footer .svg-white,
@@ -2053,11 +2052,13 @@ div.whitepanel,
 .vbs-black ul.eportfolio__edit-steps li {
   display: flex;
   align-items: center;
-
 }
 
-.vbs-black ul.eportfolio__edit-steps li.eportfolio__edit-steps--highlight > div:first-child {
-  background-color: var(--t-base-color__focus)!important;
+.vbs-black
+  ul.eportfolio__edit-steps
+  li.eportfolio__edit-steps--highlight
+  > div:first-child {
+  background-color: var(--t-base-color__focus) !important;
 }
 
 .vbs-black .eportfolio__edit-steps > li > div:first-child {
@@ -2067,9 +2068,71 @@ div.whitepanel,
 }
 
 .vbs-black .eportfolio__add-button > div:first-child {
-  background-color: transparent
+  background-color: transparent;
 }
 
 .vbs-black .k-checkbox:disabled + .k-checkbox-label {
   color: var(--t-font-color__disabled);
+}
+
+.vbs-silver .item-documents-overview__name-cell .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-silver
+  .item-detail__file-sharing__upload-panel
+  .document-table
+  div[role="rowgroup"]:first-child
+  div[role="row"]:first-child {
+  background-color: var(--t-background-color__shaded1);
+}
+
+.vbs-silver
+  .item-detail__file-sharing__upload-panel
+  .document-table
+  div[role="rowgroup"]:first-child
+  div[role="row"]:first-child:hover {
+  background-color: var(--t-background-color__shaded2);
+}
+
+.vbs-silver
+  div[role="rowgroup"]
+  div[role="row"].div-table__horizontal-table-row.user-files-overview__row-header {
+  background-color: var(--t-background-color__shaded1);
+}
+
+.vbs-silver .item-detail__file-sharing__upload-panel .svg-color {
+  fill: var(--t-font-color__base);
+}
+
+.vbs-silver .document-table .file-name {
+  color: var(--t-font-color__base);
+}
+
+.vbs-silver
+  .item-detail__file-sharing__user-panel__sortable-row__isActive
+  .download-link,
+.item-detail__file-sharing__user-panel__sortable-row__isActive .link-button {
+  color: var(--t-font-color__base);
+}
+
+.vbs-black .scroller__container-top-right,
+.vbs-silver .scroller__container-top-right {
+  top: 100px;
+}
+
+.vbs-silver .home__organizer-panel .home__organizer-panel-list__item-container:focus label {
+  color: var(--t-font-color__highlight)!important;
+}
+
+.vbs-silver .home__organizer-panel .home__organizer-panel-list__item-container:focus svg path {
+  fill: var(--t-font-color__highlight)!important;
+}
+
+.vbs-black .home__organizer-panel .home__organizer-panel-list__item-container:focus label {
+  color: var(--t-base-color__highlight)!important;
+}
+
+.vbs-silver .menu__icon.menu__search-container .svg-color {
+  fill: var(--t-base-color__highlight);
 }
