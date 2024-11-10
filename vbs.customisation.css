@@ -459,12 +459,19 @@ div.news__panel-container .news__container.news__container--large,
 .vbs-silver div.news__panel-container .news__container.news__container--large {
   border: none;
   box-shadow: none;
+  line-height: 1.1;
 }
 
 div.news__inner-container-carousel *,
 .vbs-black div.news__inner-container-carousel *,
 .vbs-silver div.news__inner-container-carousel * {
   color: inherit;
+}
+
+div.news__inner-container-carousel .swiper-slide a,
+.vbs-black div.news__inner-container-carousel .swiper-slide a,
+.vbs-silver div.news__inner-container-carousel .swiper-slide a {
+	color: var(--t-font-color__link--dark);
 }
 
 div.news__inner-container,
