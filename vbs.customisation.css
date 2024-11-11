@@ -240,7 +240,7 @@ div.l-container,
 a > div.header__logo,
 .vbs-black a > div.header__logo,
 .vbs-silver a > div.header__logo {
-  background-size: 100%;
+  background-size: contain;
   background-image: url(https://rho-mi-engineering.github.io/lmsvbscss/Armee_Logo_DFIR_neg_CMYK.png);
 }
 
