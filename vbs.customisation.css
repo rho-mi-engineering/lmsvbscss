@@ -2161,3 +2161,9 @@ div.whitepanel,
 .vbs-black .trainerPlanning-course {
 	background-color: inherit;
 }
+
+@media (min-width: 0px) and (max-width: 697px) {
+  .f2f__registration-button-container button {
+    margin-right: 0;
+  }
+}
