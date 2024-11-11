@@ -856,20 +856,20 @@ div.favorites__ribbon > button > svg > .svg-color,
   margin-top: auto;
 }
 
-.item-icon__icon,
+.item-icon .item-icon__icon,
 .vbs-black .item-icon__icon,
 .vbs-silver .item-icon__icon {
   background-color: transparent;
   border-color: var(--t-base-color__highlight--light);
 }
 
-.item-icon__icon path.svg-color,
-.vbs-black .item-icon__icon path.svg-color,
+.item-icon .item-icon__icon path.svg-color,
+.vbs-black .item-icon .item-icon__icon path.svg-color,
 .vbs-silver .item-icon__icon path.svg-color {
   color: var(--t-base-color__highlight--light);
 }
 
-.vbs-silver .item-icon__icon path.svg-color {
+.vbs-silver .item-icon .item-icon__icon path.svg-color {
   fill: var(--t-base-color__highlight--light);
 }
 
