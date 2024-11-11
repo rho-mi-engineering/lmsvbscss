@@ -241,11 +241,11 @@ a > div.header__logo,
 .vbs-black a > div.header__logo,
 .vbs-silver a > div.header__logo {
   background-size: 100%;
-  background-image: url(https://prod-armeech-hcms-sdweb.imgix.net/2023/10/28/fcf32051-b6e2-4d2b-b436-d01458ff5720.png);
+  background-image: url(https://rho-mi-engineering.github.io/lmsvbscss/Armee_Logo_DFIR_neg_CMYK.png);
 }
 
 .vbs-silver a > div.header__logo {
-  filter: invert(100%);
+	background-image: url(https://rho-mi-engineering.github.io/lmsvbscss/Armee_Logo_DFIR_pos_CMYK.png);
 }
 
 .header__information .header__navigation select,
