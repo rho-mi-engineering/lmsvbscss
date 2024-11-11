@@ -619,7 +619,7 @@ div.kpi__container a.kpi,
 .vbs-silver .catalog-folder-list > li {
   max-width: 100%;
   min-width: unset !important;
-  height: 100%;
+  height: 100%!important;
 }
 
 .catalog-folder-list > li > a,
@@ -1616,6 +1616,14 @@ div[role="row"] .skill__table__row--highPrio,
 .performanceSupport__skillHeaderGrid svg,
 .vbs-black .performanceSupport__skillHeaderGrid svg {
   fill: var(--t-base-color__highlight--light);
+}
+
+.vbs-silver .performanceSupport__percentageProgress-box .svg-color {
+	fill: var(--t-base-color__highligt--light);
+}
+
+.vbs-silver .performanceSupport__percentageProgress-box-font {
+	color: var(--t-font-color__base);
 }
 
 
