@@ -1613,6 +1613,12 @@ div[role="row"] .skill__table__row--highPrio,
   filter: invert(1);
 }
 
+.performanceSupport__skillHeaderGrid svg,
+.vbs-black .performanceSupport__skillHeaderGrid svg {
+  fill: var(--t-base-color__highlight--light);
+}
+
+
 .performanceSupport__target-box,
 .vbs-black .performanceSupport__target-box {
   background-color: var(--t-base-color__highlight--dark);
