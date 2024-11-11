@@ -2143,3 +2143,7 @@ div.whitepanel,
 .vbs-silver .menu__icon.menu__search-container .svg-color {
   fill: var(--t-base-color__highlight);
 }
+
+.vbs-black .trainerPlanning-course {
+	background-color: inherit;
+}
